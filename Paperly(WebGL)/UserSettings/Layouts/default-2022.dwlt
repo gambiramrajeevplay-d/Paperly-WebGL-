@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-  controlID: 15428
+  controlID: 17
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 15429
+  controlID: 18
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 15430
+  controlID: 19
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -248,8 +248,8 @@ MonoBehaviour:
     y: 0
     width: 282
     height: 1299
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -880,7 +880,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.06338403, y: 0.7397372, z: -0.07032592, w: -0.6662728}
     speed: 2
-    m_Value: {x: -0.063381046, y: 0.73970246, z: -0.07032262, w: -0.6662415}
+    m_Value: {x: -0.06338403, y: 0.7397372, z: -0.070325926, w: -0.6662728}
   m_Size:
     m_Target: 191.8766
     speed: 2
@@ -1087,23 +1087,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 08ee0200
-      m_LastClickedID: 192008
-      m_ExpandedIDs: c619feff1a1afeff861bfeff8e1ffeffe21ffeff6e21feff2afbffffe25b0000505c0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 22f1ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Dummy_Envi
-        m_OriginalName: Dummy_Envi
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 191844
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 10}
       m_SearchString: 
@@ -1157,8 +1157,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Scenes
+    m_Folders: []
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1167,14 +1166,14 @@ MonoBehaviour:
   m_StartGridSize: 56
   m_LastFolders: []
   m_LastFoldersGridSize: 56
-  m_LastProjectPath: D:\WebGL_Games(Rajeev)\Paperly(WebGL)
+  m_LastProjectPath: C:\Users\5th ocean\Documents\GitHub\Paperly-WebGL-\Paperly(WebGL)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 6cb40100
     m_LastClickedID: 111724
-    m_ExpandedIDs: ffffffff00000000ba5c0000bc5c0000be5c0000c05c0000c25c0000c45c0000
+    m_ExpandedIDs: 00000000585b00005c5b0000605b0000645b0000685b00006c5b0000705b0000785b0000945b000050650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1202,7 +1201,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000ba5c0000bc5c0000be5c0000c05c0000c25c0000c45c0000ea5c0000425e0000445e000074f40100
+    m_ExpandedIDs: ffffffff00000000585b00005c5b0000605b0000645b0000685b00006c5b0000705b0000785b0000945b000050650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
