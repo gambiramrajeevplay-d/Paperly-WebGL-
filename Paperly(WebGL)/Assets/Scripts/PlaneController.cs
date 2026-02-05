@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class PlaneController : MonoBehaviour
 {
@@ -25,8 +26,11 @@ public class PlaneController : MonoBehaviour
     [Header("UI")]
     public TextMeshProUGUI speedText;
 
-    [Header("Altitude Lock")]
-    public float maxHeight = 5f;
+    [Header("Forward Speed Control")]
+    public float accelRate = 8f;   // how fast +Z speed increases
+    public float decelRate = 1f;   // how slow speed decreases
+
+
 
     private Rigidbody rb;
     private float currentSpeed;
@@ -67,6 +71,27 @@ public class PlaneController : MonoBehaviour
     private bool hasStopped = false;
 
 
+    [Header("Stall Settings")]
+    public float stallSpeed = 6f;        // speed at which plane stalls
+    public float stallFallForce = 1.5f;  // how hard the plane drops
+    public float stallRecoverySpeed = 12f; // speed needed to regain control
+
+    private bool isStalling = false;
+
+
+    [Header("Climb Slowdown (No Height Limit)")]
+    public float climbSlowdownMultiplier = 0.6f; // how much speed is lost while climbing
+    public float minClimbSpeed = 18f;            // minimum speed while climbing
+
+    [Header("Climb Speed Control")]
+    public float climbSpeedDecayRate = 1f; // speed lost per second while climbing
+
+
+
+    [Header("Mobile Controls")]
+    public Joystick_Mobile joystick; // drag your joystick here
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -81,22 +106,23 @@ public class PlaneController : MonoBehaviour
 
     void Update()
     {
-        if (!canControl)
-            return; // ❌ no player input, no visuals update
+        if (!canControl) return;
 
+        // 🔁 Keyboard fallback (Editor)
         horizontalInput = Input.GetAxis("Horizontal");
 
         verticalInput = 0f;
         if (Input.GetKey(KeyCode.W)) verticalInput = 1f;
         else if (Input.GetKey(KeyCode.S)) verticalInput = -1f;
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        // 📱 Mobile joystick (Editor + Mobile)
+        if (joystick != null)
         {
-            currentSpeed = Mathf.Clamp(
-                currentSpeed + boostAmount,
-                minSpeed,
-                maxSpeed
-            );
+            if (Mathf.Abs(joystick.Horizontal) > 0.05f)
+                horizontalInput = joystick.Horizontal;
+
+            if (Mathf.Abs(joystick.Vertical) > 0.05f)
+                verticalInput = joystick.Vertical;
         }
 
         if (speedText != null)
@@ -105,6 +131,8 @@ public class PlaneController : MonoBehaviour
         HandleVisuals();
         HandleBodyVisual();
     }
+
+
     void OnCollisionEnter(Collision collision)
     {
         if (isCrashed) return;
@@ -132,7 +160,8 @@ public class PlaneController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (canControl)
+        // Normal input control ONLY if not stalling
+        if (canControl && !isStalling)
         {
             if (verticalInput != 0f)
             {
@@ -148,6 +177,29 @@ public class PlaneController : MonoBehaviour
         {
             HandleCrashMotion();
             return;
+        }
+
+        // 🛑 ENTER STALL
+        if (!isStalling && climbAmount > 0f && currentSpeed <= stallSpeed)
+        {
+            isStalling = true;
+        }
+
+        // ⬇️ STALL BEHAVIOUR (THIS WAS MISSING)
+        if (isStalling)
+        {
+            // Force nose down
+            climbAmount = Mathf.Lerp(
+                climbAmount,
+                -1f,
+                Time.fixedDeltaTime * stallFallForce
+            );
+
+            // Recover once speed is back
+            if (currentSpeed >= stallRecoverySpeed)
+            {
+                isStalling = false;
+            }
         }
 
         HandleSpeed();
@@ -203,33 +255,42 @@ public class PlaneController : MonoBehaviour
 
         if (climbAmount > 0f)
         {
-            // climbing costs energy
-            targetSpeed -= climbSpeedLoss * climbAmount;
+            // 🔼 Climb: controlled speed loss
+            targetSpeed -= climbSpeedDecayRate * climbAmount;
         }
+
         else if (climbAmount < 0f)
         {
-            // diving gains energy
-            targetSpeed += diveSpeedGain * -climbAmount;
+            // 🔽 Dive: strong speed gain
+            targetSpeed += diveSpeedGain * -climbAmount * 5f;
         }
         else
         {
-            // gentle auto-glide acceleration
-            targetSpeed += idleSpeedGain * Time.fixedDeltaTime;
+            // ➡️ Level flight recovery
+            targetSpeed += idleSpeedGain;
         }
 
-        // soft altitude cap
-        if (transform.position.y >= maxHeight && climbAmount > 0f)
-            targetSpeed = minSpeed;
+        targetSpeed = Mathf.Clamp(targetSpeed, minSpeed, maxSpeed);
+
+        // 🔥 DIFFERENT RATES for gain vs loss
+        float rate =
+            targetSpeed > currentSpeed
+            ? accelRate    // gaining speed → FAST
+            : decelRate;   // losing speed → SLOW
 
         currentSpeed = Mathf.MoveTowards(
             currentSpeed,
             targetSpeed,
-            deceleration * Time.fixedDeltaTime
+            rate * Time.fixedDeltaTime
         );
 
-        currentSpeed = Mathf.Clamp(currentSpeed, minSpeed, maxSpeed);
-    }
+        // 🛑 STALL CHECK
+        if (climbAmount > 0f && currentSpeed <= stallSpeed)
+        {
+            isStalling = true;
+        }
 
+    }
 
 
     // ================= MOVEMENT =================
@@ -238,19 +299,30 @@ public class PlaneController : MonoBehaviour
     {
         Vector3 vel = rb.velocity;
 
-        // CONSTANT forward motion
         vel.z = currentSpeed;
 
-        // Horizontal glide (paper-like)
         float targetX = horizontalInput * sideMoveSpeed;
         vel.x = Mathf.Lerp(vel.x, targetX, Time.fixedDeltaTime * movementSmooth);
 
-        // Vertical glide (floaty, NOT strong)
-        float glideY = climbAmount * verticalMoveSpeed;
+        float speedFactor = Mathf.Lerp(
+            0.7f,
+            1.2f,
+            Mathf.InverseLerp(minSpeed, maxSpeed, currentSpeed)
+        );
+
+        float glideY = climbAmount * verticalMoveSpeed * speedFactor;
+
+        // Extra gravity while stalling
+        if (isStalling)
+        {
+            glideY -= stallFallForce;
+        }
+
         vel.y = Mathf.Lerp(vel.y, glideY, Time.fixedDeltaTime * movementSmooth);
 
         rb.velocity = vel;
     }
+
 
     // ================= VISUALS =================
 

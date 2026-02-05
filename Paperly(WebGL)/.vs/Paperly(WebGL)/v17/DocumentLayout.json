@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\WebGL_Games(Rajeev)\\Paperly(WebGL)\\",
+  "WorkspaceRootPath": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|d:\\webgl_games(rajeev)\\paperly(webgl)\\assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|c:\\users\\5th ocean\\documents\\github\\paperly-webgl-\\paperly(webgl)\\assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\WebGL_Games(Rajeev)\\Paperly(WebGL)\\assets\\scripts\\planecamerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|c:\\users\\5th ocean\\documents\\github\\paperly-webgl-\\paperly(webgl)\\assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\planecamerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planecamerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,28 +22,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Joystick_Mobile.cs",
+              "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\Joystick_Mobile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Joystick_Mobile.cs",
+              "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\Joystick_Mobile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Joystick_Mobile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T06:28:51.939Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PlaneController.cs",
-              "DocumentMoniker": "D:\\WebGL_Games(Rajeev)\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
+              "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneController.cs",
-              "ToolTip": "D:\\WebGL_Games(Rajeev)\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
+              "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlaneController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAADwv3oAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAACcBAAAAAAAAAAAAAGwBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T11:13:41.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlaneCameraFollow.cs",
-              "DocumentMoniker": "D:\\WebGL_Games(Rajeev)\\Paperly(WebGL)\\Assets\\Scripts\\PlaneCameraFollow.cs",
+              "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneCameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneCameraFollow.cs",
-              "ToolTip": "D:\\WebGL_Games(Rajeev)\\Paperly(WebGL)\\Assets\\Scripts\\PlaneCameraFollow.cs",
+              "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneCameraFollow.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlaneCameraFollow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAQwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
