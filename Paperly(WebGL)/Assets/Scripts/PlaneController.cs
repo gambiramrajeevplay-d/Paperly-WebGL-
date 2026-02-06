@@ -86,6 +86,9 @@ public class PlaneController : MonoBehaviour
     [Header("Climb Speed Control")]
     public float climbSpeedDecayRate = 1f; // speed lost per second while climbing
 
+    [Header("Critical Speed Zone")]
+    public float criticalSpeed = 18f;
+    public float criticalClimbDecayMultiplier = 3f; // how brutal speed loss becomes
 
 
     [Header("Mobile Controls")]
@@ -253,44 +256,71 @@ public class PlaneController : MonoBehaviour
     {
         float targetSpeed = currentSpeed;
 
+        // ================= CLIMB =================
         if (climbAmount > 0f)
         {
-            // 🔼 Climb: controlled speed loss
-            targetSpeed -= climbSpeedDecayRate * climbAmount;
+            // 0 = slow, 1 = very fast
+            float speed01 = Mathf.InverseLerp(
+                criticalSpeed,
+                maxSpeed,
+                currentSpeed
+            );
+
+            // Always lose speed while climbing
+            float climbLoss = Mathf.Lerp(
+                climbSpeedDecayRate,                                   // mild loss at low speed
+                climbSpeedDecayRate * criticalClimbDecayMultiplier,    // brutal loss at high speed
+                speed01
+            );
+
+            targetSpeed -= climbLoss * climbAmount;
         }
 
+        // ================= DIVE =================
         else if (climbAmount < 0f)
         {
-            // 🔽 Dive: strong speed gain
-            targetSpeed += diveSpeedGain * -climbAmount * 5f;
+            // Strong acceleration while diving
+            targetSpeed += diveSpeedGain * -climbAmount;
         }
+
+        // ================= LEVEL FLIGHT =================
         else
         {
-            // ➡️ Level flight recovery
+            // Slow natural speed build-up
             targetSpeed += idleSpeedGain;
         }
 
+        // Clamp final target
         targetSpeed = Mathf.Clamp(targetSpeed, minSpeed, maxSpeed);
 
-        // 🔥 DIFFERENT RATES for gain vs loss
-        float rate =
-            targetSpeed > currentSpeed
-            ? accelRate    // gaining speed → FAST
-            : decelRate;   // losing speed → SLOW
+        // ================= RATE CONTROL =================
+        float rate;
 
+        // Faster slowdown when climbing
+        if (climbAmount > 0f && targetSpeed < currentSpeed)
+        {
+            rate = decelRate * 6f;
+        }
+        else
+        {
+            rate = targetSpeed > currentSpeed ? accelRate : decelRate;
+        }
+
+        // Apply speed change smoothly
         currentSpeed = Mathf.MoveTowards(
             currentSpeed,
             targetSpeed,
             rate * Time.fixedDeltaTime
         );
 
-        // 🛑 STALL CHECK
+        // ================= STALL CHECK =================
         if (climbAmount > 0f && currentSpeed <= stallSpeed)
         {
             isStalling = true;
         }
-
     }
+
+
 
 
     // ================= MOVEMENT =================
@@ -299,37 +329,65 @@ public class PlaneController : MonoBehaviour
     {
         Vector3 vel = rb.velocity;
 
+        // 🔥 Forward speed
         vel.z = currentSpeed;
 
-        float targetX = horizontalInput * sideMoveSpeed;
-        vel.x = Mathf.Lerp(vel.x, targetX, Time.fixedDeltaTime * movementSmooth);
+        // ================= TURN CONTROL =================
+        // Turning strength depends on speed
+        float turnFactor = Mathf.InverseLerp(
+            stallSpeed,   // barely controllable
+            maxSpeed,     // full authority
+            currentSpeed
+        );
 
+        turnFactor = Mathf.Clamp01(turnFactor);
+
+        float targetX = horizontalInput * sideMoveSpeed * turnFactor;
+        vel.x = Mathf.Lerp(
+            vel.x,
+            targetX,
+            Time.fixedDeltaTime * movementSmooth
+        );
+
+        // ================= CLIMB / FALL =================
         float speedFactor = Mathf.Lerp(
-            0.7f,
-            1.2f,
+            0.6f,   // weak lift at low speed
+            1.2f,   // strong lift at high speed
             Mathf.InverseLerp(minSpeed, maxSpeed, currentSpeed)
         );
 
-        float glideY = climbAmount * verticalMoveSpeed * speedFactor;
+        float climbBoost = Mathf.Lerp(1f, 1.6f, Mathf.Abs(climbAmount));
+        float glideY = climbAmount * verticalMoveSpeed * speedFactor * climbBoost;
 
-        // Extra gravity while stalling
+
+        // Extra fall while stalling
         if (isStalling)
         {
             glideY -= stallFallForce;
         }
 
-        vel.y = Mathf.Lerp(vel.y, glideY, Time.fixedDeltaTime * movementSmooth);
+        vel.y = Mathf.Lerp(
+            vel.y,
+            glideY,
+            Time.fixedDeltaTime * movementSmooth
+        );
 
         rb.velocity = vel;
     }
+
 
 
     // ================= VISUALS =================
 
     void HandleVisuals()
     {
-        // Pitch (climb / dive only)
-        float pitch = -climbAmount * pitchAmount;
+        // Speed-based responsiveness
+        float speed01 = Mathf.InverseLerp(minSpeed, maxSpeed, currentSpeed);
+
+        float dynamicPitch = pitchAmount * Mathf.Lerp(0.4f, 1.1f, speed01);
+        float dynamicSmooth = Mathf.Lerp(3f, visualSmooth, speed01);
+
+        float pitch = -climbAmount * dynamicPitch;
 
         Quaternion targetRot =
             Quaternion.Euler(-90f + pitch, 0f, 180f);
@@ -337,9 +395,10 @@ public class PlaneController : MonoBehaviour
         planeVisual.localRotation = Quaternion.Slerp(
             planeVisual.localRotation,
             targetRot,
-            Time.deltaTime * visualSmooth
+            Time.deltaTime * dynamicSmooth
         );
     }
+
 
 
 
