@@ -5,6 +5,18 @@
         "name": "Animation",
         "dependencies": [
           {
+            "name": "Animation",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AnimationClip",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Animator",
             "scenes": [],
             "dependencyType": 0,
@@ -18,6 +30,12 @@
           },
           {
             "name": "AnimatorOverrideController",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Motion",
             "scenes": [],
             "dependencyType": 0,
             "icon": null
@@ -130,6 +148,12 @@
               "Assets/Scenes/SampleScene.unity"
             ],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "FlareLayer",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -353,6 +377,12 @@
             "icon": null
           },
           {
+            "name": "Skybox",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "SortingGroup",
             "scenes": [],
             "dependencyType": 0,
@@ -360,7 +390,9 @@
           },
           {
             "name": "Sprite",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/SampleScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },

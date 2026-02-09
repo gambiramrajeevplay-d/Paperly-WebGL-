@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|c:\\users\\5th ocean\\documents\\github\\paperly-webgl-\\paperly(webgl)\\assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,8 +34,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Joystick_Mobile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T06:28:51.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T06:28:51.939Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneController.cs",
               "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlaneController.cs",
-              "ViewState": "AgIAACcBAAAAAAAAAAAAAGwBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAmwEEBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T11:13:41.669Z",
               "EditorCaption": ""
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlaneCameraFollow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAQwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T11:13:16.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T11:13:16.715Z"
             }
           ]
         }
