@@ -94,6 +94,9 @@ public class PlaneController : MonoBehaviour
     [Header("Mobile Controls")]
     public Joystick_Mobile joystick; // drag your joystick here
 
+    [Header("Altitude Speed Zone")]
+    public float safeMinHeight = -20f;
+    public float safeMaxHeight = 20f;
 
     void Start()
     {
@@ -256,69 +259,74 @@ public class PlaneController : MonoBehaviour
     {
         float targetSpeed = currentSpeed;
 
+        float height = transform.position.y;
+        bool inSafeHeightZone = height >= safeMinHeight && height <= safeMaxHeight;
+
         // ================= CLIMB =================
         if (climbAmount > 0f)
         {
-            // 0 = slow, 1 = very fast
-            float speed01 = Mathf.InverseLerp(
-                criticalSpeed,
-                maxSpeed,
-                currentSpeed
-            );
+            if (!inSafeHeightZone)
+            {
+                // Normal climb slowdown (outside safe zone)
+                float speed01 = Mathf.InverseLerp(
+                    criticalSpeed,
+                    maxSpeed,
+                    currentSpeed
+                );
 
-            // Always lose speed while climbing
-            float climbLoss = Mathf.Lerp(
-                climbSpeedDecayRate,                                   // mild loss at low speed
-                climbSpeedDecayRate * criticalClimbDecayMultiplier,    // brutal loss at high speed
-                speed01
-            );
+                float climbLoss = Mathf.Lerp(
+                    climbSpeedDecayRate,
+                    climbSpeedDecayRate * criticalClimbDecayMultiplier,
+                    speed01
+                );
 
-            targetSpeed -= climbLoss * climbAmount;
+                targetSpeed -= climbLoss * climbAmount;
+            }
+            else
+            {
+                // 🔥 SAFE HEIGHT: maintain speed
+                targetSpeed += idleSpeedGain * 0.5f;
+            }
         }
 
         // ================= DIVE =================
         else if (climbAmount < 0f)
         {
-            // Strong acceleration while diving
             targetSpeed += diveSpeedGain * -climbAmount;
         }
 
         // ================= LEVEL FLIGHT =================
         else
         {
-            // Slow natural speed build-up
             targetSpeed += idleSpeedGain;
         }
 
-        // Clamp final target
         targetSpeed = Mathf.Clamp(targetSpeed, minSpeed, maxSpeed);
 
-        // ================= RATE CONTROL =================
         float rate;
-
-        // Faster slowdown when climbing
         if (climbAmount > 0f && targetSpeed < currentSpeed)
-        {
             rate = decelRate * 6f;
-        }
         else
-        {
             rate = targetSpeed > currentSpeed ? accelRate : decelRate;
-        }
 
-        // Apply speed change smoothly
         currentSpeed = Mathf.MoveTowards(
             currentSpeed,
             targetSpeed,
             rate * Time.fixedDeltaTime
         );
 
+        if (inSafeHeightZone)
+        {
+            targetSpeed = Mathf.Max(targetSpeed, maxSpeed * 0.7f);
+        }
+
         // ================= STALL CHECK =================
-        if (climbAmount > 0f && currentSpeed <= stallSpeed)
+        if (!inSafeHeightZone && climbAmount > 0f && currentSpeed <= stallSpeed)
         {
             isStalling = true;
         }
     }
+
 
 
 
