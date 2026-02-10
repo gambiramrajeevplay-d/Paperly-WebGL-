@@ -16786,6 +16786,8 @@ MonoBehaviour:
   criticalSpeed: 18
   criticalClimbDecayMultiplier: 3
   joystick: {fileID: 0}
+  safeMinHeight: -20
+  safeMaxHeight: 20
 --- !u!54 &664485959
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20531,8 +20533,8 @@ Transform:
   - {fileID: 1445144408}
   - {fileID: 410787170}
   - {fileID: 543450653114221976}
-  - {fileID: 1989177645}
   - {fileID: 543450651718459926}
+  - {fileID: 1989177645}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &816406388
@@ -48200,7 +48202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1989177645
 Transform:
   m_ObjectHideFlags: 0
