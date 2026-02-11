@@ -15,7 +15,7 @@ D:/Paperly-WebGL-/Paperly(WebGL)
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52031
+51554
 Successfully changed project path to: D:/Paperly-WebGL-/Paperly(WebGL)
 D:/Paperly-WebGL-/Paperly(WebGL)
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,15 +49,15 @@ D:/Paperly-WebGL-/Paperly(WebGL)
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [14760]  Target information:
+Player connection [17856]  Target information:
 
-Player connection [14760]  * "[IP] 192.168.0.3 [Port] 0 [Flags] 2 [Guid] 195829477 [EditorId] 195829477 [Version] 1048832 [Id] WindowsEditor(7,Bharath) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17856]  * "[IP] 192.168.0.3 [Port] 0 [Flags] 2 [Guid] 3535757208 [EditorId] 3535757208 [Version] 1048832 [Id] WindowsEditor(7,Bharath) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [14760] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [14760] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17856] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [17856] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 5.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.62f2 (7670c08855a9)
 [Subsystems] Discovering subsystems at path D:/Unity_Editors/2022.3.62f2/Editor/Data/Resources/UnitySubsystems
@@ -73,49 +73,49 @@ Initialize mono
 Mono path[0] = 'D:/Unity_Editors/2022.3.62f2/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity_Editors/2022.3.62f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity_Editors/2022.3.62f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56900
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity_Editors/2022.3.62f2/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity_Editors/2022.3.62f2/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/Unity_Editors/2022.3.62f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004745 seconds.
-- Loaded All Assemblies, in  0.404 seconds
+Registered in 0.005112 seconds.
+- Loaded All Assemblies, in  0.386 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1380 ms
+Android Extension - Scanning For ADB Devices 280 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.725 seconds
-Domain Reload Profiling: 2129ms
-	BeginReloadAssembly (131ms)
+- Finished resetting the current domain, in  0.601 seconds
+Domain Reload Profiling: 987ms
+	BeginReloadAssembly (100ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (173ms)
-		LoadAssemblies (132ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (180ms)
+		LoadAssemblies (100ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (169ms)
-			TypeCache.Refresh (167ms)
-				TypeCache.ScanAssembly (149ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (1726ms)
+		AnalyzeDomain (177ms)
+			TypeCache.Refresh (175ms)
+				TypeCache.ScanAssembly (159ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (602ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1661ms)
+		SetupLoadedEditorAssemblies (547ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1462ms)
+			InitializePlatformSupportModulesInManaged (360ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (132ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (122ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -124,45 +124,45 @@ Domain Reload Profiling: 2129ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.800 seconds
+- Loaded All Assemblies, in  0.533 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.651 seconds
-Domain Reload Profiling: 1452ms
-	BeginReloadAssembly (164ms)
+- Finished resetting the current domain, in  0.519 seconds
+Domain Reload Profiling: 1053ms
+	BeginReloadAssembly (102ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (49ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (548ms)
-		LoadAssemblies (370ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (375ms)
+		LoadAssemblies (234ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (255ms)
-			TypeCache.Refresh (226ms)
-				TypeCache.ScanAssembly (209ms)
-			ScanForSourceGeneratedMonoScriptInfo (20ms)
+		AnalyzeDomain (196ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (149ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (652ms)
+	FinalizeReload (519ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (452ms)
+		SetupLoadedEditorAssemblies (353ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (18ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (341ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (251ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
 WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Mobile Specular Outline' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -235,13 +235,13 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Desktop Specular OutlineBlending' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 3.32 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3602 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 47 unused Assets / (8.0 MB). Loaded Objects now: 4052.
-Memory consumption went from 191.8 MB to 183.8 MB.
-Total: 5.702200 ms (FindLiveObjects: 0.344200 ms CreateObjectMapping: 0.168200 ms MarkObjects: 3.046300 ms  DeleteObjects: 2.142300 ms)
+Memory consumption went from 192.0 MB to 183.9 MB.
+Total: 5.168100 ms (FindLiveObjects: 0.385300 ms CreateObjectMapping: 0.197200 ms MarkObjects: 2.890700 ms  DeleteObjects: 1.693900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -259,25 +259,85 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 169591.596111 seconds.
-  path: Assets/images.png
-  artifactKey: Guid(b0ca3d6a9d4a053468ce69b01702dd75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/images.png using Guid(b0ca3d6a9d4a053468ce69b01702dd75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'c8bdc207120e429f4a74195ee16c74a7') in 0.112551 seconds
+  Time since last request: 176834.022901 seconds.
+  path: Assets/Scenes/Level_2.unity
+  artifactKey: Guid(f48a599135300ea429127c78b57cd724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_2.unity using Guid(f48a599135300ea429127c78b57cd724) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '825c131388447ccb838baa112f353625') in 0.001965 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/asd.png
-  artifactKey: Guid(00e1ed00932ae374eab8f48aac3ffe46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asd.png using Guid(00e1ed00932ae374eab8f48aac3ffe46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 9.478824 seconds.
+  path: Assets/Fonts/Louis George Cafe Italic SDF.asset
+  artifactKey: Guid(5ab1225df2ce21644b85384357490f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Louis George Cafe Italic SDF.asset using Guid(5ab1225df2ce21644b85384357490f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'e6f1aabe118a4569d2e365a97865d0fe') in 0.072309 seconds
+ -> (artifact id: '83711940c920fbfc58bb4c60282a8af1') in 0.111438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Fonts/Louis George Cafe Light Italic SDF.asset
+  artifactKey: Guid(3e498ab90d97b2247883d15120d5523a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Louis George Cafe Light Italic SDF.asset using Guid(3e498ab90d97b2247883d15120d5523a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5c22eed4c94b48d13feb0df719fa7057') in 0.031482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 3.667583 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/TCP2 Demo Assets/Cubemaps/TCP2_Demo_Sky_LancellottiChapel.mat
+  artifactKey: Guid(7ab5713f065e9a544b3377bb8858c8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/TCP2 Demo Assets/Cubemaps/TCP2_Demo_Sky_LancellottiChapel.mat using Guid(7ab5713f065e9a544b3377bb8858c8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4ec81956023350f93d9a20fc4b8aa809') in 0.108525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Common Demo Assets/Graphics/TCP2_Demo_SkyboxDusk.mat
+  artifactKey: Guid(5390ccc6cbba36142a51bb2d8a8b582d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Common Demo Assets/Graphics/TCP2_Demo_SkyboxDusk.mat using Guid(5390ccc6cbba36142a51bb2d8a8b582d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2716ba6f57f72ad3ba3dbafd293ad714') in 0.049429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Common Demo Assets/Graphics/TCP2_Demo_SkyboxDay.mat
+  artifactKey: Guid(b94a90c9516c9cc42bf2d46a3d63a76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Common Demo Assets/Graphics/TCP2_Demo_SkyboxDay.mat using Guid(b94a90c9516c9cc42bf2d46a3d63a76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0035adf6458fb6de92e0e0cb347e8ca8') in 0.092812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/TCP2_Demo_Skybox.mat
+  artifactKey: Guid(0e269d21846501c4dbb4e1520793d286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/TCP2_Demo_Skybox.mat using Guid(0e269d21846501c4dbb4e1520793d286) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5cb0a4674e0af04e1f437db09e6c95f2') in 0.141850 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Common Demo Assets/Graphics/TCP2_Demo_SkyboxNight.mat
+  artifactKey: Guid(24e37d9b5c3e0be4fab3e1defb323693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Common Demo Assets/Graphics/TCP2_Demo_SkyboxNight.mat using Guid(24e37d9b5c3e0be4fab3e1defb323693) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6d223594f314a4a9e994f937091040ad') in 0.079678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
