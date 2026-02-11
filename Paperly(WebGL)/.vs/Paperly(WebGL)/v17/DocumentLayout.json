@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|c:\\users\\5th ocean\\documents\\github\\paperly-webgl-\\paperly(webgl)\\assets\\scripts\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|c:\\users\\5th ocean\\documents\\github\\paperly-webgl-\\paperly(webgl)\\assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\planecamerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planecamerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|c:\\users\\5th ocean\\documents\\github\\paperly-webgl-\\paperly(webgl)\\assets\\scripts\\boostpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boostpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\coinpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\levelcoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelcoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\currencymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\currencymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\SpeedFOV.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\planecamerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planecamerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,24 +46,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "BoostPickUp.cs",
+              "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\BoostPickUp.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BoostPickUp.cs",
+              "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\BoostPickUp.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BoostPickUp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T06:27:32.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LevelCoinManager.cs",
+              "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\LevelCoinManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelCoinManager.cs",
+              "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\LevelCoinManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelCoinManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T05:30:58.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoinPickUp.cs",
+              "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\CoinPickUp.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CoinPickUp.cs",
+              "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\CoinPickUp.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CoinPickUp.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwBwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T05:18:03.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CurrencyManager.cs",
+              "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\CurrencyManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CurrencyManager.cs",
+              "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\CurrencyManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CurrencyManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T05:17:27.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FinishLine.cs",
               "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\FinishLine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FinishLine.cs",
               "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\FinishLine.cs",
               "RelativeToolTip": "Assets\\Scripts\\FinishLine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T07:02:38.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-10T07:02:38.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "SpeedFOV.cs",
               "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\SpeedFOV.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpeedFOV.cs",
@@ -58,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Joystick_Mobile.cs",
               "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\Joystick_Mobile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Joystick_Mobile.cs",
@@ -70,28 +134,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PlaneController.cs",
               "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneController.cs",
               "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlaneController.cs",
-              "ViewState": "AgIAAHsBAAAAAAAAAAAAwK8BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAP4BAAAAAAAAAAAYwAwCAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T11:13:41.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "PlaneCameraFollow.cs",
               "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneCameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneCameraFollow.cs",
               "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneCameraFollow.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlaneCameraFollow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T11:13:16.715Z"
+              "WhenOpened": "2026-02-02T11:13:16.715Z",
+              "EditorCaption": ""
             }
           ]
         }

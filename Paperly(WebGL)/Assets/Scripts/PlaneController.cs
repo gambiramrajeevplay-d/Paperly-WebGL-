@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
+using System.Collections;
 
 public class PlaneController : MonoBehaviour
 {
@@ -98,8 +99,51 @@ public class PlaneController : MonoBehaviour
     public float safeMinHeight = -20f;
     public float safeMaxHeight = 20f;
 
+    [Header("Crash Sound")]
+    public AudioClip crashSound;
+    private AudioSource audioSource;
+
+    [Header("Boost System")]
+    public bool hasBoost = false;
+    public bool isBoosting = false;
+
+    public float boostSpeedAmount = 25f;
+    public float boostDuration = 2f;
+
+    [Header("Boost Visual")]
+    public float boostRotationSpeed = 720f; // Z rotation speed
+    public float boostFOV = 85f;
+    public float normalFOV = 60f;
+    public float fovSmooth = 5f;
+
+    private Camera mainCam;
+    private Coroutine boostCoroutine;
+
+    public GameObject boostPopup;
+
+
     void Start()
     {
+
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        audioSource.playOnAwake = false;
+
+        // Get camera by tag
+        GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera");
+        if (camObj != null)
+        {
+            mainCam = camObj.GetComponent<Camera>();
+            normalFOV = mainCam.fieldOfView;
+        }
+
+
+
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
         rb.drag = 0f;
@@ -134,6 +178,16 @@ public class PlaneController : MonoBehaviour
         if (speedText != null)
             speedText.text = currentSpeed.ToString("0");
 
+        // 🚀 Boost Activation
+        if (hasBoost && !isBoosting && Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            if (boostCoroutine != null)
+                StopCoroutine(boostCoroutine);
+
+            boostCoroutine = StartCoroutine(BoostRoutine());
+        }
+
+
         HandleVisuals();
         HandleBodyVisual();
     }
@@ -146,22 +200,24 @@ public class PlaneController : MonoBehaviour
         isCrashed = true;
         canControl = false;
 
-        // Store crash start position
+        // 🔊 PLAY CRASH SOUND
+        if (crashSound != null)
+        {
+            audioSource.PlayOneShot(crashSound);
+        }
+
         crashStartPosition = transform.position;
 
-        // Reduce speed immediately (but not zero)
         currentSpeed = Mathf.Max(currentSpeed * 0.6f, minSpeed);
 
-        // Add fake drag
         rb.drag = crashDrag;
         rb.useGravity = true;
 
-        // Nose down
         climbAmount = -0.6f;
 
-        // 🔥 UNFREEZE rotations for crash visuals
         rb.constraints = RigidbodyConstraints.None;
     }
+
 
 
     void FixedUpdate()
@@ -212,6 +268,62 @@ public class PlaneController : MonoBehaviour
         HandleMovement();
     }
 
+    IEnumerator BoostRoutine()
+    {
+        isBoosting = true;
+        hasBoost = false;
+
+        float originalMaxSpeed = maxSpeed;
+        maxSpeed += boostSpeedAmount;
+
+        float timer = 0f;
+
+        if (boostPopup != null)
+            boostPopup.SetActive(false);
+
+
+        while (timer < boostDuration)
+        {
+            timer += Time.deltaTime;
+
+            // 🎥 Smooth FOV increase
+            if (mainCam != null)
+            {
+                mainCam.fieldOfView = Mathf.Lerp(
+                    mainCam.fieldOfView,
+                    boostFOV,
+                    Time.deltaTime * fovSmooth
+                );
+            }
+
+            yield return null;
+        }
+
+        maxSpeed = originalMaxSpeed;
+        isBoosting = false;
+
+        // 🎥 Reset FOV smoothly
+        if (mainCam != null)
+        {
+            StartCoroutine(ResetFOV());
+        }
+    }
+
+    IEnumerator ResetFOV()
+    {
+        while (mainCam.fieldOfView > normalFOV + 0.1f)
+        {
+            mainCam.fieldOfView = Mathf.Lerp(
+                mainCam.fieldOfView,
+                normalFOV,
+                Time.deltaTime * fovSmooth
+            );
+
+            yield return null;
+        }
+
+        mainCam.fieldOfView = normalFOV;
+    }
 
 
     void HandleCrashMotion()
@@ -405,15 +517,24 @@ public class PlaneController : MonoBehaviour
             targetRot,
             Time.deltaTime * dynamicSmooth
         );
+
+        //  Rotate whole plane on Z while boosting
+        //if (isBoosting)
+        //{
+        //    transform.Rotate(Vector3.forward * boostRotationSpeed * Time.deltaTime);
+        //}
+
     }
 
 
 
 
     // ================= BODY VISUALS =================
+    private float boostZRotation = 0f;
+
     void HandleBodyVisual()
     {
-        // LEFT / RIGHT input → Z rotation
+        // Base banking roll
         float targetRoll = -horizontalInput * bodyRollAmount;
 
         bodyRoll = Mathf.Lerp(
@@ -422,9 +543,20 @@ public class PlaneController : MonoBehaviour
             Time.deltaTime * bodyRollSmooth
         );
 
-        // Apply ONLY Z rotation (keep X & Y untouched)
+        // 🔥 Add boost rotation using your existing boostRotationSpeed
+        if (isBoosting)
+        {
+            boostZRotation += boostRotationSpeed * Time.deltaTime;
+        }
+        else
+        {
+            boostZRotation = Mathf.Lerp(boostZRotation, 0f, Time.deltaTime * 3f);
+        }
+
+        float finalZ = bodyRoll + boostZRotation;
+
         Vector3 rot = transform.localEulerAngles;
-        rot.z = bodyRoll;
+        rot.z = finalZ;
         transform.localEulerAngles = rot;
     }
 
