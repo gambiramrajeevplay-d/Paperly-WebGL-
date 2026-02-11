@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FinishLine : MonoBehaviour
 {
+    public GameObject LevelPass;
+    public GameObject LevelGameObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +20,8 @@ public class FinishLine : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(CompareTag("Player"))
-        {
-            Time.timeScale = 1.0f;
-
-        }
+      LevelGameObject.SetActive(false);
+            
     }
 
     

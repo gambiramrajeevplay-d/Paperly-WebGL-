@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -168,8 +168,8 @@ MonoBehaviour:
     y: 0
     width: 1290
     height: 666
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -708,9 +708,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 11.504601, y: 196.44414, z: 648.7326}
+    m_Target: {x: 9.431892, y: 21.93663, z: 622.38086}
     speed: 2
-    m_Value: {x: 11.504601, y: 196.44414, z: 648.7326}
+    m_Value: {x: 9.431892, y: 21.93663, z: 622.38086}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -756,13 +756,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.28175765, y: 0.20829657, z: -0.0627217, w: -0.93453354}
+    m_Target: {x: -0.20159864, y: -0.43145704, z: 0.09964262, w: -0.8736915}
     speed: 2
-    m_Value: {x: -0.28193584, y: 0.20548569, z: -0.061874233, w: -0.93512535}
+    m_Value: {x: -0.20159233, y: -0.4314435, z: 0.0996395, w: -0.8736641}
   m_Size:
-    m_Target: 81.704994
+    m_Target: 854.9398
     speed: 2
-    m_Value: 81.70504
+    m_Value: 854.9398
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -824,25 +824,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 30720000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 1669ffffc47bffff327cffff9c7cffff6881ffff6682ffff6087ffff1889ffff888dffffa28effffb890ffffe495ffffe496ffffdc97ffff9e98ffff32a5ffff48a6ffffa4bdffffc8dfffffbce0ffff0ee1ffff5ee1ffff82f3ffff8ef4fffffefaffffb2c200004a190200dc2b0500
+      m_SelectedIDs: 28edffff
+      m_LastClickedID: -4824
+      m_ExpandedIDs: 54f2ffffc8f2fffffefaffff26750000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Level_1(Rajeev)
-        m_OriginalName: Level_1(Rajeev)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 338908
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 7}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -895,7 +895,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/PaperlySounds
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -903,32 +903,32 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/PaperlySounds
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\5th ocean\Documents\GitHub\Paperly-WebGL-\Paperly(WebGL)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 24720000
-    m_LastClickedID: 29220
-    m_ExpandedIDs: 00000000e6710000e8710000ea71000000ca9a3b
+    m_SelectedIDs: 127c0000
+    m_LastClickedID: 31762
+    m_ExpandedIDs: 000000001c76000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Models
+      m_OriginalName: Models
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 30292
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -940,7 +940,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e6710000e8710000ea710000
+    m_ExpandedIDs: 000000001c7600001e76000020760000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: -160
+    m_CachedPref: 628
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
