@@ -49,6 +49,7 @@ public class LevelCoinManager : MonoBehaviour
     void UpdateUI()
     {
         if (levelCoinText)
-            levelCoinText.text = collectedCoins.ToString();
+            levelCoinText.text = "Coins : " + collectedCoins;
     }
+
 }

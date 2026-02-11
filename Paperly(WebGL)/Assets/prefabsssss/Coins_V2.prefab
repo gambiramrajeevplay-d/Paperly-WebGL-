@@ -152,7 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinValue: 1
-  pickupEffect: {fileID: 0}
 --- !u!1 &7976982197289372715
 GameObject:
   m_ObjectHideFlags: 0

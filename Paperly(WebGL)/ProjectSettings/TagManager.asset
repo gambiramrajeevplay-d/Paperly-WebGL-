@@ -6,6 +6,8 @@ TagManager:
   tags:
   - PickUp
   - Boost
+  - Rewind
+  - RewindRewind
   layers:
   - Default
   - TransparentFX

@@ -6,7 +6,7 @@ public class CoinPickUp : MonoBehaviour
 
 {
     [SerializeField] private int coinValue = 1;
-    [SerializeField] private ParticleSystem pickupEffect;
+    //[SerializeField] private ParticleSystem pickupEffect;
 
     private AudioSource pickupSound;
 
@@ -38,12 +38,12 @@ public class CoinPickUp : MonoBehaviour
             pickupSound.Play();
 
         // ✨ Play pickup particle
-        if (pickupEffect)
-        {
-            pickupEffect.transform.SetParent(null);
-            pickupEffect.Play();
-            Destroy(pickupEffect.gameObject, 2f);
-        }
+        //if (pickupEffect)
+        //{
+        //    pickupEffect.transform.SetParent(null);
+        //    pickupEffect.Play();
+        //    Destroy(pickupEffect.gameObject, 2f);
+        //}
 
         Destroy(gameObject);
     }

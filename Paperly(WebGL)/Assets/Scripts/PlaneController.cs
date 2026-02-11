@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
 using UnityEngine.EventSystems;
-using System.Collections;
 
 public class PlaneController : MonoBehaviour
 {
@@ -121,6 +122,12 @@ public class PlaneController : MonoBehaviour
 
     public GameObject boostPopup;
 
+    [Header("Rewind System")]
+    public bool isRewinding = false;
+    public float recordTime = 5f; // how many seconds to store
+
+    private List<Vector3> positionHistory = new List<Vector3>();
+    private List<Quaternion> rotationHistory = new List<Quaternion>();
 
     void Start()
     {
@@ -222,6 +229,17 @@ public class PlaneController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!isRewinding)
+        {
+            RecordHistory();
+        }
+
+        if (isRewinding)
+        {
+            RewindMovement();
+            return;
+        }
+
         // Normal input control ONLY if not stalling
         if (canControl && !isStalling)
         {
@@ -267,7 +285,39 @@ public class PlaneController : MonoBehaviour
         HandleSpeed();
         HandleMovement();
     }
+    void RecordHistory()
+    {
+        if (positionHistory.Count > recordTime / Time.fixedDeltaTime)
+        {
+            positionHistory.RemoveAt(0);
+            rotationHistory.RemoveAt(0);
+        }
 
+        positionHistory.Add(transform.position);
+        rotationHistory.Add(transform.rotation);
+    }
+    void StartRewind()
+    {
+        isRewinding = true;
+        canControl = false;
+    }
+
+    void StopRewind()
+    {
+        isRewinding = false;
+        canControl = true;
+    }
+    void RewindMovement()
+    {
+        if (positionHistory.Count > 0)
+        {
+            transform.position = positionHistory[positionHistory.Count - 1];
+            transform.rotation = rotationHistory[rotationHistory.Count - 1];
+
+            positionHistory.RemoveAt(positionHistory.Count - 1);
+            rotationHistory.RemoveAt(rotationHistory.Count - 1);
+        }
+    }
     IEnumerator BoostRoutine()
     {
         isBoosting = true;
@@ -308,6 +358,7 @@ public class PlaneController : MonoBehaviour
             StartCoroutine(ResetFOV());
         }
     }
+   
 
     IEnumerator ResetFOV()
     {
