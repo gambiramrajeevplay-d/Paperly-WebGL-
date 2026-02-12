@@ -7,7 +7,9 @@ TagManager:
   - PickUp
   - Boost
   - Rewind
-  - RewindRewind
+  - Rocket
+  - Speed
+  - Joystick
   layers:
   - Default
   - TransparentFX

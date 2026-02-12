@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e0de513b5b09af0419eb752e2cd071dc, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -437,8 +437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd17882b178fe84cb5326b42431f819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1799579389}
   offset: {x: 0, y: 3, z: -8}
+  target: {fileID: 1799579389}
 --- !u!81 &109985911
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8135,8 +8135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52be83f737e46e44290b41102a64b769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelPass: {fileID: 0}
-  LevelGameObject: {fileID: 0}
+  levelPassPanel: {fileID: 0}
+  levelGameObject: {fileID: 0}
 --- !u!64 &1000803630
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9982,6 +9982,8 @@ MonoBehaviour:
   normalFOV: 60
   fovSmooth: 5
   boostPopup: {fileID: 0}
+  isRewinding: 0
+  recordTime: 5
 --- !u!33 &1593875494
 MeshFilter:
   m_ObjectHideFlags: 0

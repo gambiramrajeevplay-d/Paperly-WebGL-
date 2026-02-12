@@ -8702,6 +8702,8 @@ MonoBehaviour:
   normalFOV: 60
   fovSmooth: 5
   boostPopup: {fileID: 0}
+  isRewinding: 0
+  recordTime: 5
 --- !u!33 &1101570134
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18378,8 +18380,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd17882b178fe84cb5326b42431f819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1645133726}
   offset: {x: 0, y: 3, z: -8}
+  target: {fileID: 1645133726}
 --- !u!81 &1697915952
 AudioListener:
   m_ObjectHideFlags: 0
@@ -19563,8 +19565,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52be83f737e46e44290b41102a64b769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelPass: {fileID: 0}
-  LevelGameObject: {fileID: 0}
+  levelPassPanel: {fileID: 0}
+  levelGameObject: {fileID: 0}
 --- !u!64 &1789504016
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -131,17 +131,13 @@ public class PlaneController : MonoBehaviour
 
     void Start()
     {
-
         audioSource = GetComponent<AudioSource>();
-
         if (audioSource == null)
-        {
             audioSource = gameObject.AddComponent<AudioSource>();
-        }
 
         audioSource.playOnAwake = false;
 
-        // Get camera by tag
+        // Camera
         GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera");
         if (camObj != null)
         {
@@ -149,16 +145,28 @@ public class PlaneController : MonoBehaviour
             normalFOV = mainCam.fieldOfView;
         }
 
+        // Speed UI
+        GameObject speedObj = GameObject.FindGameObjectWithTag("Speed");
+        if (speedObj != null)
+        {
+            speedText = speedObj.GetComponent<TextMeshProUGUI>();
+        }
 
+        // ✅ Joystick
+        GameObject joystickObj = GameObject.FindGameObjectWithTag("Joystick");
+        if (joystickObj != null)
+        {
+            joystick = joystickObj.GetComponent<Joystick_Mobile>();
+        }
 
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
         rb.drag = 0f;
         rb.constraints = RigidbodyConstraints.FreezeRotation;
 
-        // 🔥 Start speed at 30
         currentSpeed = Mathf.Clamp(30f, minSpeed, maxSpeed);
     }
+
 
 
     void Update()
@@ -223,6 +231,12 @@ public class PlaneController : MonoBehaviour
         climbAmount = -0.6f;
 
         rb.constraints = RigidbodyConstraints.None;
+
+        TimeManager timeManager = FindObjectOfType<TimeManager>();
+        if (timeManager != null)
+        {
+            timeManager.GameOverFromCrash();
+        }
     }
 
 
@@ -285,6 +299,14 @@ public class PlaneController : MonoBehaviour
         HandleSpeed();
         HandleMovement();
     }
+
+    IEnumerator DisableAudioAfterCrash()
+    {
+        yield return new WaitForSeconds(3f); // let crash sound finish
+        if (audioSource != null)
+            audioSource.enabled = false;
+    }
+
     void RecordHistory()
     {
         if (positionHistory.Count > recordTime / Time.fixedDeltaTime)

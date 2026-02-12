@@ -136,7 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620ae8184cb3318468299b3358052f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToAdd: 10
+  timeToAdd: 2
+  floatingText: {fileID: 0}
+  pickupClip: {fileID: 8300000, guid: c165f7e80e3ba3b4589984e8d2a6a350, type: 3}
 --- !u!65 &6526674036644310958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -255,7 +257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620ae8184cb3318468299b3358052f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToAdd: 10
+  timeToAdd: 2
+  floatingText: {fileID: 0}
+  pickupClip: {fileID: 8300000, guid: c165f7e80e3ba3b4589984e8d2a6a350, type: 3}
 --- !u!65 &8196715588203388830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -374,7 +378,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620ae8184cb3318468299b3358052f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToAdd: 10
+  timeToAdd: 2
+  floatingText: {fileID: 0}
+  pickupClip: {fileID: 8300000, guid: c165f7e80e3ba3b4589984e8d2a6a350, type: 3}
 --- !u!65 &5859960482950880037
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -493,7 +499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620ae8184cb3318468299b3358052f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToAdd: 10
+  timeToAdd: 2
+  floatingText: {fileID: 0}
+  pickupClip: {fileID: 8300000, guid: c165f7e80e3ba3b4589984e8d2a6a350, type: 3}
 --- !u!65 &7553025162330904302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -612,7 +620,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620ae8184cb3318468299b3358052f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToAdd: 10
+  timeToAdd: 2
+  floatingText: {fileID: 0}
+  pickupClip: {fileID: 8300000, guid: c165f7e80e3ba3b4589984e8d2a6a350, type: 3}
 --- !u!65 &8036327108300351069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -731,7 +741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620ae8184cb3318468299b3358052f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToAdd: 10
+  timeToAdd: 2
+  floatingText: {fileID: 0}
+  pickupClip: {fileID: 8300000, guid: c165f7e80e3ba3b4589984e8d2a6a350, type: 3}
 --- !u!65 &4847234896218011407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -850,7 +862,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620ae8184cb3318468299b3358052f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToAdd: 10
+  timeToAdd: 2
+  floatingText: {fileID: 0}
+  pickupClip: {fileID: 8300000, guid: c165f7e80e3ba3b4589984e8d2a6a350, type: 3}
 --- !u!65 &8833863613597669474
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 73deb6910f657904e8836b75b5f4527e
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BATWING_SUPERIOR_1
+    second: {fileID: 2100000, guid: f0bb6ce4e40b64749afa494a64bde5d8, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 0d5bd75fef0d43879660e786b6990a1a_N_painted_wire_088144225_normal
+    second: {fileID: 2800000, guid: b043e1d994186fc4889b2585e7f5318c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 11d842b55d9a44af921e72cd463e9a76_RGB_painted_BATWING_SUPERIOR_31_albedo
+    second: {fileID: 2800000, guid: f6104ba69cce12d44a931cf3d94e85b5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2fb04d8388ec4aa69f6c132d5da47113_RGB_painted_wire_087224198_albedo
+    second: {fileID: 2800000, guid: 19abcd4460b6e9f41b3a99d197d79b21, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 407c6f2c880c44459308ba8a307de7bf_RGB_painted_wire_224198087_albedo
+    second: {fileID: 2800000, guid: d2e5dd1b1e4a47640abec36b04321621, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 54daddfe7d6d4fdf921ebf86fbdb65b9_N_painted_wire_028089177_normal
+    second: {fileID: 2800000, guid: 6eb6f5582df53ac44a19457b385cc671, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 558813697e51448e8a1befd9c6dabc3f_N_painted_wire_087224198_normal
+    second: {fileID: 2800000, guid: 5917e3714d9b1084f8796717cb46db96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 638e3085a5fa4e0296dc34996f93ef0e_N_unreal_Material__189_Normal
+    second: {fileID: 2800000, guid: 8ff2209b0b977114dbb116a7559f8315, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 7f4ff9732dbc4b4aad2f0fee2207c667_N_painted_BATWING_SUPERIOR_31_normal
+    second: {fileID: 2800000, guid: 2e4120ca972985d4a88e1331a7dc973b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 81c698c89eb549d79c6a7bc929060e8a_RGB_unreal_Material__190_BaseColor
+    second: {fileID: 2800000, guid: c40794e0fd9674c408393772774bcf03, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: a069a26cb2c248b1b6f6832bb652864e_N_painted_wire_006134006_normal
+    second: {fileID: 2800000, guid: 9e3164a099f516c41b64063afa6f4e4b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: b27f51f031624c958b22dfd05f096a4b_RGB_painted_wire_134006006_albedo
+    second: {fileID: 2800000, guid: a82d99bc510f02349bada7dc81a7c257, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: c24eb7dc33a047b082c07b77de4f7c5b_RGB_painted_wire_028089177_albedo
+    second: {fileID: 2800000, guid: e39d9732cb5504744892b901ae143595, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: c2a0fc3cb9774c738c9c67f6b6311067_N_Wing_up_NM__006
+    second: {fileID: 2800000, guid: 7a58f2da71c3e584ebe77b5d2462c8d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: e5351328ea2a4fc2bf050fe4342482bb_RGB_unreal_Material__189_BaseColor
+    second: {fileID: 2800000, guid: 2ab74da079c8aad40afe672679540582, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ec4fb56725674cf7aa9af9a0d00d8932_RGB_painted_Diego_Teran_Missile_01_defaultMat_albedo
+    second: {fileID: 2800000, guid: 9ad05fa94e40e044da1315bdb20b2fc5, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

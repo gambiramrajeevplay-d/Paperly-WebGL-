@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 8949e2f43b891a54ab0353966a538931, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e0de513b5b09af0419eb752e2cd071dc, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2336,8 +2336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd17882b178fe84cb5326b42431f819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 2032859037}
   offset: {x: 0, y: 3, z: -8}
+  target: {fileID: 2032859037}
 --- !u!81 &252725042
 AudioListener:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class TimeManager : MonoBehaviour
 {
@@ -16,19 +17,28 @@ public class TimeManager : MonoBehaviour
 
     private bool isGameOver = false;
 
+    [Header("Fail Audio")]
+    public AudioClip failClip;
+    public AudioSource uiAudioSource;
+
+    public GameObject levelGameObj;
+
     void Start()
     {
         currentTime = startTime;
 
-        // Get player by tag
+        // Player
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
-        {
             playerPlane = playerObj.GetComponent<PlaneController>();
-        }
+
+        // UI AudioSource (recommended on Canvas)
+        if (uiAudioSource == null)
+            uiAudioSource = GetComponent<AudioSource>();
 
         UpdateUI();
     }
+
 
     void Update()
     {
@@ -57,14 +67,18 @@ public class TimeManager : MonoBehaviour
             timeText.text = "Time Left : " + minutes.ToString("00") + ":" + seconds.ToString("00");
         }
     }
-
-
-
-    void GameOver()
+    public void GameOverFromCrash()
     {
+        if (isGameOver) return;
+
         isGameOver = true;
 
-        // Stop player control
+        StartCoroutine(GameOverDelayRoutine());
+    }
+
+    IEnumerator GameOverDelayRoutine()
+    {
+        // Stop player control immediately
         if (playerPlane != null)
         {
             playerPlane.canControl = false;
@@ -77,11 +91,52 @@ public class TimeManager : MonoBehaviour
             }
         }
 
-        // Show fail panel
+        // 🔊 Play fail sound
+        if (uiAudioSource != null && failClip != null)
+        {
+            uiAudioSource.PlayOneShot(failClip);
+        }
+
+        // ⏳ Wait before showing fail
+        yield return new WaitForSeconds(3f);
+
+        // ❌ Turn OFF level gameplay
+        if (levelGameObj != null)
+            levelGameObj.SetActive(false);
+
+        // ✅ Show fail UI
         if (levelFailPanel != null)
             levelFailPanel.SetActive(true);
 
-        // Optional pause
+        Time.timeScale = 0f;
+    }
+
+
+
+    void GameOver()
+    {
+        isGameOver = true;
+
+        if (playerPlane != null)
+        {
+            playerPlane.canControl = false;
+
+            Rigidbody rb = playerPlane.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+            }
+        }
+
+        // ❌ Disable gameplay
+        if (levelGameObj != null)
+            levelGameObj.SetActive(false);
+
+        // ✅ Show fail UI
+        if (levelFailPanel != null)
+            levelFailPanel.SetActive(true);
+
         Time.timeScale = 0f;
     }
 
