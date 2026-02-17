@@ -23,6 +23,10 @@ public class TimeManager : MonoBehaviour
 
     public GameObject levelGameObj;
 
+    private float bonusTimeCollected = 0f; // total picked time
+    private float flightTime = 0f;         // plane alive time
+
+
     void Start()
     {
         currentTime = startTime;
@@ -47,6 +51,9 @@ public class TimeManager : MonoBehaviour
 
         currentTime -= Time.deltaTime;
 
+        // ✈ Track how long the plane exists
+        flightTime += Time.deltaTime;
+
         if (currentTime <= 0f)
         {
             currentTime = 0f;
@@ -55,6 +62,7 @@ public class TimeManager : MonoBehaviour
 
         UpdateUI();
     }
+
 
     void UpdateUI()
     {
@@ -105,12 +113,22 @@ public class TimeManager : MonoBehaviour
             levelGameObj.SetActive(false);
 
         // ✅ Show fail UI
-        if (levelFailPanel != null)
-            levelFailPanel.SetActive(true);
+        //if (levelFailPanel != null)
+        //    levelFailPanel.SetActive(true);
+        GameManager.Instance.ShowLevelFail();
 
         Time.timeScale = 0f;
     }
 
+    public float GetBonusTimeCollected()
+    {
+        return bonusTimeCollected;
+    }
+
+    public float GetFlightTime()
+    {
+        return flightTime;
+    }
 
 
     void GameOver()

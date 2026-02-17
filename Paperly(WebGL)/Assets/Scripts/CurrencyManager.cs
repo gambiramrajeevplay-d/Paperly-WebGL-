@@ -1,12 +1,8 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CurrencyManager : MonoBehaviour
-
 {
-
     public static CurrencyManager instance;
 
     public event Action<int> OnCurrencyChanged;
@@ -67,7 +63,6 @@ public class CurrencyManager : MonoBehaviour
     public void UnlockCharacter(int characterIndex)
     {
         PlayerPrefs.SetInt("CharUnlocked_" + characterIndex, 1);
-        //  PlayerPrefs.SetInt("character", presentChar);
         PlayerPrefs.Save();
     }
 
@@ -75,7 +70,4 @@ public class CurrencyManager : MonoBehaviour
     {
         return PlayerPrefs.GetInt("CharUnlocked_" + characterIndex, 0) == 1;
     }
-
 }
-
-

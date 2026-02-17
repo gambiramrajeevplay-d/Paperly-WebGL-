@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BoostPickUp : MonoBehaviour
 {
@@ -8,43 +6,44 @@ public class BoostPickUp : MonoBehaviour
     public AudioClip pickupSound;
 
     private AudioSource audioSource;
+    private PlaneController plane;
 
     void Start()
     {
-        // 🔊 Get AudioSource from object tagged "PickUp"
-        GameObject audioObj = GameObject.FindGameObjectWithTag("PickUp");
+        if (boostPopup != null)
+            boostPopup.SetActive(false);
 
+        GameObject audioObj = GameObject.FindGameObjectWithTag("PickUp");
         if (audioObj != null)
-        {
             audioSource = audioObj.GetComponent<AudioSource>();
-        }
-        else
-        {
-            Debug.LogWarning("No GameObject found with tag 'PickUp'");
-        }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            PlaneController boost = other.GetComponent<PlaneController>();
+        if (!other.CompareTag("Player")) return;
 
-            if (boost != null)
-            {
-                boost.hasBoost = true;
+        plane = other.GetComponent<PlaneController>();
+        if (plane == null) return;
 
-                if (boostPopup != null)
-                    boostPopup.SetActive(true);
+        plane.hasBoost = true;
 
-                // 🔊 Play pickup sound
-                if (pickupSound != null && audioSource != null)
-                {
-                    audioSource.PlayOneShot(pickupSound);
-                }
+        if (boostPopup != null)
+            boostPopup.SetActive(true);
 
-                Destroy(gameObject);
-            }
-        }
+        // 🔊 Pickup sound
+        if (pickupSound != null && audioSource != null)
+            audioSource.PlayOneShot(pickupSound);
+
+        // 🔔 Subscribe to boost end
+        plane.OnBoostFinished += HidePopup;
+    }
+
+    void HidePopup()
+    {
+        if (boostPopup != null)
+            boostPopup.SetActive(false);
+
+        // 🔕 Unsubscribe to avoid memory leaks
+        plane.OnBoostFinished -= HidePopup;
     }
 }

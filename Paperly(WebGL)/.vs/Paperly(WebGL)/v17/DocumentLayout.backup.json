@@ -3,6 +3,93 @@
   "WorkspaceRootPath": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\boostpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boostpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MOKSHA GAMES AND PVT\\Desktop\\dummy\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Toony Colors Pro\\Toony Colors Pro\\Demo TCP2\\Common Demo Assets\\Kino Bloom\\Editor\\ToonyColorsPro.Demo.Editor.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Toony Colors Pro\\Toony Colors Pro\\Demo TCP2\\Common Demo Assets\\Kino Bloom\\Editor\\ToonyColorsPro.Demo.Editor.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\level_button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\level_button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\controlsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controlsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\stringsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\stringsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\pauser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\pauser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\audiomanagerpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\audiomanagerpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\currencymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\currencymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\carcontrollerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\carcontrollerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\loadingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\loadingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\levelcoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelcoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\instructionsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\instructionsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4B83F1C-CFF6-A514-3121-4CE0DEA6E906}|UnityEditor.UI.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\library\\packagecache\\com.unity.ugui@1.0.0\\editor\\ui\\graphiceditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4B83F1C-CFF6-A514-3121-4CE0DEA6E906}|UnityEditor.UI.csproj|solutionrelative:library\\packagecache\\com.unity.ugui@1.0.0\\editor\\ui\\graphiceditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\playerspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\coinpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\caruitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\caruitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,48 +98,24 @@
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timecollectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\playerspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\levelselectionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\levelselectionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|d:\\paperly-webgl-\\paperly(webgl)\\assets\\ui_scripts (2)\\ui_scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4B83F1C-CFF6-A514-3121-4CE0DEA6E906}|UnityEditor.UI.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\library\\packagecache\\com.unity.ugui@1.0.0\\editor\\ui\\selectableeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4B83F1C-CFF6-A514-3121-4CE0DEA6E906}|UnityEditor.UI.csproj|solutionrelative:library\\packagecache\\com.unity.ugui@1.0.0\\editor\\ui\\selectableeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|d:\\paperly-webgl-\\paperly(webgl)\\assets\\ui_scripts (2)\\ui_scripts\\carcontrollerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\carcontrollerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\savescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\savescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|d:\\paperly-webgl-\\paperly(webgl)\\assets\\ui_scripts (2)\\ui_scripts\\storemenu_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\storemenu_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\storemenu_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|d:\\paperly-webgl-\\paperly(webgl)\\assets\\ui_scripts (2)\\ui_scripts\\instructionsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\instructionsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\level_button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\level_button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\TvContentMove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\UI_Scripts (2)\\UI_Scripts\\TvContentMove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\ui_scripts (2)\\ui_scripts\\pauser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_scripts (2)\\ui_scripts\\pauser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\UI_Scripts\\DailyRewards_Final.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +126,6 @@
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planecamerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\floatingtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\floatingtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\checkpointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -75,35 +134,15 @@
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\levelcoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelcoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\coinpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\reversetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\reversetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\boostpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boostpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\currencymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\currencymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\SpeedFOV.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|D:\\Paperly-WebGL-\\Paperly(WebGL)\\assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6BAC42D-6EB4-86A9-348E-755FC30E640F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\joystick_mobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\SceneLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\UI_Scripts (2)\\UI_Scripts\\SceneLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -113,37 +152,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\MainMenu.cs",
-              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\MainMenu.cs",
-              "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\MainMenu.cs",
-              "ViewState": "AgIAALoAAAAAAAAAAAAUwLAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T09:28:55.504Z",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\MOKSHA GAMES AND PVT\\Desktop\\dummy\\index.html",
+              "ToolTip": "C:\\Users\\MOKSHA GAMES AND PVT\\Desktop\\dummy\\index.html",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-17T10:28:33.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "ToonyColorsPro.Demo.Editor.asmdef",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Toony Colors Pro\\Toony Colors Pro\\Demo TCP2\\Common Demo Assets\\Kino Bloom\\Editor\\ToonyColorsPro.Demo.Editor.asmdef",
+              "RelativeDocumentMoniker": "Assets\\Toony Colors Pro\\Toony Colors Pro\\Demo TCP2\\Common Demo Assets\\Kino Bloom\\Editor\\ToonyColorsPro.Demo.Editor.asmdef",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Toony Colors Pro\\Toony Colors Pro\\Demo TCP2\\Common Demo Assets\\Kino Bloom\\Editor\\ToonyColorsPro.Demo.Editor.asmdef",
+              "RelativeToolTip": "Assets\\Toony Colors Pro\\Toony Colors Pro\\Demo TCP2\\Common Demo Assets\\Kino Bloom\\Editor\\ToonyColorsPro.Demo.Editor.asmdef",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001874|",
+              "WhenOpened": "2026-02-17T08:35:04.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\MainMenu.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\MainMenu.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowHsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T09:28:55.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "CarControllerUI.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\CarControllerUI.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\CarControllerUI.cs",
               "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\CarControllerUI.cs",
               "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\CarControllerUI.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAuwGoAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAIwMoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T09:27:48.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T09:27:48.161Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 27,
               "Title": "StoreMenu_UI.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\StoreMenu_UI.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\StoreMenu_UI.cs",
@@ -151,12 +210,11 @@
               "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\StoreMenu_UI.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAwwCUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T09:26:58.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T09:26:58.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 35,
               "Title": "SceneLoader.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\SceneLoader.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\SceneLoader.cs",
@@ -168,7 +226,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
+              "Title": "Joystick_Mobile.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\Joystick_Mobile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Joystick_Mobile.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\Joystick_Mobile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Joystick_Mobile.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T06:28:51.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StringsData.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\StringsData.cs",
+              "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\StringsData.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\StringsData.cs",
+              "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\StringsData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T03:18:08.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "TvContentMove.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\TvContentMove.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\TvContentMove.cs",
@@ -179,57 +261,189 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Pauser.cs",
-              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\Pauser.cs",
-              "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\Pauser.cs",
-              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\Pauser.cs",
-              "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\Pauser.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAD4v1IAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T08:58:30.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Level_Button.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\Level_Button.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\Level_Button.cs",
               "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\Level_Button.cs",
               "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\Level_Button.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAtwIUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAuwFsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-12T08:58:20.721Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlaneController.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneController.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlaneController.cs",
+              "ViewState": "AgIAAHMCAAAAAAAAAAAIwIwCAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T11:13:41.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BoostPickUp.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\BoostPickUp.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BoostPickUp.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\BoostPickUp.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BoostPickUp.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T06:27:32.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\Gamemanager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gamemanager.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\Gamemanager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gamemanager.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T06:12:44.764Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "FinishLine.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\FinishLine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FinishLine.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\FinishLine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FinishLine.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAuwFEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T07:02:38.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SaveScript.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\SaveScript.cs",
+              "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\SaveScript.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\SaveScript.cs",
+              "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\SaveScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T03:18:17.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SelectableEditor.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Editor\\UI\\SelectableEditor.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Editor\\UI\\SelectableEditor.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Editor\\UI\\SelectableEditor.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Editor\\UI\\SelectableEditor.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwCkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T04:17:58.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ControlsManager.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\ControlsManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ControlsManager.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\ControlsManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ControlsManager.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T06:52:57.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GraphicEditor.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Editor\\UI\\GraphicEditor.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Editor\\UI\\GraphicEditor.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Editor\\UI\\GraphicEditor.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Editor\\UI\\GraphicEditor.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAmwDQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T04:22:22.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CarUItem.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\CarUItem.cs",
+              "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\CarUItem.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\CarUItem.cs",
+              "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\CarUItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T09:41:09.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AudioManagerPause.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\AudioManagerPause.cs",
+              "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\AudioManagerPause.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\AudioManagerPause.cs",
+              "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\AudioManagerPause.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T06:34:35.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Pauser.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\Pauser.cs",
+              "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\Pauser.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\Pauser.cs",
+              "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\Pauser.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAswJIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T08:58:30.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoadingManager.cs",
+              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\LoadingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\LoadingManager.cs",
+              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\LoadingManager.cs",
+              "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\LoadingManager.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T10:26:55.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "LevelSelectionUI.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\LevelSelectionUI.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\LevelSelectionUI.cs",
               "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\LevelSelectionUI.cs",
               "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\LevelSelectionUI.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAkwIgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T08:58:10.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T08:58:10.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "InstructionsUI.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\InstructionsUI.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\InstructionsUI.cs",
               "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\InstructionsUI.cs",
               "RelativeToolTip": "Assets\\UI_Scripts (2)\\UI_Scripts\\InstructionsUI.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAswB0AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwB0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T08:58:01.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T08:58:01.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 29,
               "Title": "DailyRewards_Final.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\UI_Scripts (2)\\UI_Scripts\\UI_Scripts\\DailyRewards_Final.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Scripts (2)\\UI_Scripts\\UI_Scripts\\DailyRewards_Final.cs",
@@ -240,58 +454,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
               "Title": "PlayerSpawn.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlayerSpawn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerSpawn.cs",
               "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlayerSpawn.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerSpawn.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwC0AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAmwCwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T08:49:14.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T08:49:14.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FloatingText.cs",
-              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\FloatingText.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FloatingText.cs",
-              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\FloatingText.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FloatingText.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T05:16:30.775Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 23,
               "Title": "TimeCollectable.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\TimeCollectable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TimeCollectable.cs",
               "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\TimeCollectable.cs",
               "RelativeToolTip": "Assets\\Scripts\\TimeCollectable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvzUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T11:42:35.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-11T11:42:35.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 22,
               "Title": "TimeManager.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\TimeManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TimeManager.cs",
               "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\TimeManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\TimeManager.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAIwI0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T11:41:35.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-11T11:41:35.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 33,
               "Title": "ReverseTrigger.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\ReverseTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ReverseTrigger.cs",
@@ -303,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 31,
               "Title": "CheckpointManager.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\CheckpointManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CheckpointManager.cs",
@@ -315,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 32,
               "Title": "CheckPoint.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\CheckPoint.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CheckPoint.cs",
@@ -327,31 +526,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "BoostPickUp.cs",
-              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\BoostPickUp.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BoostPickUp.cs",
-              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\BoostPickUp.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BoostPickUp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T06:27:32.721Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "LevelCoinManager.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\LevelCoinManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LevelCoinManager.cs",
               "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\LevelCoinManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\LevelCoinManager.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwDUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-11T05:30:58.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "CoinPickUp.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\CoinPickUp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CoinPickUp.cs",
@@ -363,31 +550,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 13,
               "Title": "CurrencyManager.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\CurrencyManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CurrencyManager.cs",
               "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\CurrencyManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\CurrencyManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-11T05:17:27.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FinishLine.cs",
-              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\FinishLine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FinishLine.cs",
-              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\FinishLine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FinishLine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T07:02:38.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 34,
               "Title": "SpeedFOV.cs",
               "DocumentMoniker": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\SpeedFOV.cs",
               "ToolTip": "C:\\Users\\5th ocean\\Documents\\GitHub\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\SpeedFOV.cs",
@@ -396,32 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Joystick_Mobile.cs",
-              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\Joystick_Mobile.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Joystick_Mobile.cs",
-              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\Joystick_Mobile.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Joystick_Mobile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T06:28:51.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlaneController.cs",
-              "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneController.cs",
-              "ToolTip": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlaneController.cs",
-              "ViewState": "AgIAAFwCAAAAAAAAAAAAAHwCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T11:13:41.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 30,
               "Title": "PlaneCameraFollow.cs",
               "DocumentMoniker": "D:\\Paperly-WebGL-\\Paperly(WebGL)\\Assets\\Scripts\\PlaneCameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneCameraFollow.cs",

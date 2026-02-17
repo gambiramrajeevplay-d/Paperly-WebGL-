@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: d8bb9e60f2229e144b3a713f076e65ad
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - levelPassPanel: {instanceID: 0}
+  - levelFailPanel: {instanceID: 0}
+  - passCoinsText: {instanceID: 0}
+  - passTimeCollectedText: {instanceID: 0}
+  - passFlightTimeText: {instanceID: 0}
+  - failCoinsText: {instanceID: 0}
+  - failTimeCollectedText: {instanceID: 0}
+  - failFlightTimeText: {instanceID: 0}
+  - levelFailSound: {fileID: 8300000, guid: 3f203fede93feda48a6a688324139605, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,75 +1,29 @@
-﻿using System.Collections;
-using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
+using TMPro;
+using System.Collections;
 
 public class CarControllerUI : MonoBehaviour
 {
-    private const int TOTAL_CARS = 9;
-    private const int SPECIAL_CAR_INDEX = 1;
-    private const int SPECIAL_CAR_PRICE = 2500;
-
-    [Header("Car Preview Objects (SCENE OBJECTS)")]
-    [SerializeField] private GameObject[] allCars = new GameObject[TOTAL_CARS];
-
-    [Header("UI")]
-    [SerializeField] private TMP_Text carNameText;
-    [SerializeField] private TMP_Text totalCoinsText;
-    [SerializeField] private Image accel;
-    [SerializeField] private Image boost;
-    [SerializeField] private Image handling;
-
     [Header("Buttons")]
-    [SerializeField] private Button leftButton;
-    [SerializeField] private Button rightButton;
-    [SerializeField] private Button closeButton;
-    [SerializeField] private GameObject selectButton;
-    [SerializeField] private GameObject unlock2500Button;
-    [SerializeField] private GameObject[] buyButtons;
+    [SerializeField] private Button[] buyButtons;     // Buy buttons (locked cars)
+    [SerializeField] private Button[] selectButtons;  // Select buttons (unlocked cars)
 
-    [Header("Panels")]
-    [SerializeField] private GameObject mainMenuPanel;
-    [SerializeField] private GameObject carSelectionPanel;
-    [SerializeField] private GameObject levelselectionPanel;
+    [Header("Car Costs (Match Order)")]
+    [SerializeField] private int[] carCosts;
 
-    [Header("Stats")]
-    [SerializeField] private float[] accelVal;
-    [SerializeField] private float[] boostVal;
-    [SerializeField] private float[] handlingVal;
+    [Header("Button Sprites")]
+    [SerializeField] private Sprite selectSprite;
+    [SerializeField] private Sprite inUseSprite;
 
-    [Header("Unlock Panels")]
-    [SerializeField] private GameObject unlockAllPanel;
-    [SerializeField] private GameObject unlockDummyPanel;
-
-    [Header("Dummy Unlock Settings")]
-    [SerializeField] private int unlockFourCount = 4;
-    private bool unlockAllNext = false;
+    [Header("Currency UI")]
+    [SerializeField] private TMP_Text coinsText;
 
     [Header("Not Enough Coins Popup")]
     [SerializeField] private GameObject notEnoughCoinsPopup;
-    [SerializeField] private float notEnoughPopupDuration = 5f;
-    private Coroutine notEnoughPopupCoroutine;
+    [SerializeField] private float popupDuration = 2f;
 
-    [Header("Names")]
-    [SerializeField]
-    private string[] carNames =
-    {
-        "Nitrohawk",
-        "Hyperion GT",
-        "BlazeRunner",
-        "AeroVex",
-        "Stormflare",
-        "TurboSpectre",
-        "Nitro Beast",
-        "Shadow RX",
-        "Vortex Z"
-    };
-
-    [Header("Temporary Unlock (SESSION ONLY)")]
-    [SerializeField] private bool tempUnlockAllCars = false;
-
-    public int presentCar = 0;
+    private int selectedCarIndex = 0;
 
     // =========================
     // UNITY
@@ -77,34 +31,41 @@ public class CarControllerUI : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.SetInt("car0", 1);
+        UnlockFirstCarIfNeeded();
 
-        leftButton.onClick.AddListener(Left);
-        rightButton.onClick.AddListener(Right);
-        closeButton.onClick.AddListener(OnClose);
+        selectedCarIndex = PlayerPrefs.GetInt("selectedCar", 0);
 
-        presentCar = PlayerPrefs.GetInt("selectedTruck", 0);
+        UpdateCoinsUI();
+        UpdateAllUI();
 
-        RefreshCar();
-    }
-
-    void OnEnable()
-    {
-        RefreshCar();
-
-        // ✅ SUBSCRIBE TO COIN CHANGES
         if (CurrencyManager.instance != null)
-        {
             CurrencyManager.instance.OnCurrencyChanged += OnCurrencyChanged;
-            UpdateCoinsUI();
-        }
     }
 
-    void OnDisable()
+    void OnDestroy()
     {
-        // ✅ UNSUBSCRIBE (IMPORTANT)
         if (CurrencyManager.instance != null)
             CurrencyManager.instance.OnCurrencyChanged -= OnCurrencyChanged;
+    }
+
+    // =========================
+    // FIRST CAR UNLOCK
+    // =========================
+
+    void UnlockFirstCarIfNeeded()
+    {
+        if (CurrencyManager.instance == null) return;
+
+        if (!CurrencyManager.instance.IsCharacterUnlocked(0))
+        {
+            CurrencyManager.instance.UnlockCharacter(0);
+        }
+
+        if (!PlayerPrefs.HasKey("selectedCar"))
+        {
+            PlayerPrefs.SetInt("selectedCar", 0);
+            PlayerPrefs.Save();
+        }
     }
 
     // =========================
@@ -118,262 +79,124 @@ public class CarControllerUI : MonoBehaviour
 
     void UpdateCoinsUI()
     {
-        if (totalCoinsText != null && CurrencyManager.instance != null)
-            totalCoinsText.text = CurrencyManager.instance.GetCurrency().ToString();
+        if (coinsText != null && CurrencyManager.instance != null)
+            coinsText.text = CurrencyManager.instance.GetCurrency().ToString();
     }
 
     // =========================
-    // NAVIGATION
+    // SELECT
     // =========================
 
-    public void Left()
-    {
-        presentCar = (presentCar - 1 + TOTAL_CARS) % TOTAL_CARS;
-        RefreshCar();
-    }
-
-    public void Right()
-    {
-        presentCar = (presentCar + 1) % TOTAL_CARS;
-        RefreshCar();
-    }
-
-    void RefreshCar()
-    {
-        TurnOffAllCars();
-
-        if (allCars[presentCar] != null)
-            allCars[presentCar].SetActive(true);
-
-        UpdateCarName();
-        UpdateStatsUI();
-        UpdateButtons();
-
-        PlayerPrefs.SetInt("selectedTruck", presentCar);
-        PlayerPrefs.Save();
-    }
-
-    void TurnOffAllCars()
-    {
-        foreach (var car in allCars)
-            if (car != null) car.SetActive(false);
-    }
-
-    // =========================
-    // UI
-    // =========================
-
-    void UpdateCarName()
-    {
-        if (carNameText != null && presentCar < carNames.Length)
-            carNameText.text = carNames[presentCar];
-    }
-
-    void UpdateStatsUI()
-    {
-        if (presentCar < accelVal.Length)
-            accel.fillAmount = accelVal[presentCar];
-
-        if (presentCar < boostVal.Length)
-            boost.fillAmount = boostVal[presentCar];
-
-        if (presentCar < handlingVal.Length)
-            handling.fillAmount = handlingVal[presentCar];
-    }
-
-    // =========================
-    // UNLOCK LOGIC
-    // =========================
-
-    bool IsUnlocked(int index)
-    {
-        if (tempUnlockAllCars) return true;
-        if (index == 0) return true;
-        return PlayerPrefs.GetInt("car" + index, 0) == 1;
-    }
-
-    void UpdateButtons()
-    {
-        bool unlocked = IsUnlocked(presentCar);
-
-        selectButton.SetActive(false);
-        unlock2500Button.SetActive(false);
-
-        foreach (var b in buyButtons)
-            if (b != null) b.SetActive(false);
-
-        if (unlocked)
-        {
-            selectButton.SetActive(true);
-            return;
-        }
-
-        if (presentCar == SPECIAL_CAR_INDEX)
-        {
-            unlock2500Button.SetActive(true);
-            if (presentCar < buyButtons.Length && buyButtons[presentCar] != null)
-                buyButtons[presentCar].SetActive(true);
-            return;
-        }
-
-        if (presentCar < buyButtons.Length && buyButtons[presentCar] != null)
-            buyButtons[presentCar].SetActive(true);
-    }
-
-    // =========================
-    // DUMMY UNLOCK FLOW
-    // =========================
-
-    public void OnDummyContinueClicked()
-    {
-        if (unlockAllNext)
-            UnlockAllCarsDummy();
-        else
-            UnlockFourCarsDummy();
-
-        unlockAllNext = !unlockAllNext;
-
-        if (unlockDummyPanel != null)
-            unlockDummyPanel.SetActive(false);
-
-        if (levelselectionPanel != null)
-            levelselectionPanel.SetActive(true);
-
-        UpdateButtons();
-    }
-
-    void UnlockFourCarsDummy()
-    {
-        int unlocked = 0;
-        for (int i = 1; i < TOTAL_CARS && unlocked < unlockFourCount; i++)
-        {
-            if (PlayerPrefs.GetInt("car" + i, 0) == 0)
-            {
-                PlayerPrefs.SetInt("car" + i, 1);
-                unlocked++;
-            }
-        }
-        PlayerPrefs.Save();
-    }
-
-    void UnlockAllCarsDummy()
-    {
-        for (int i = 1; i < TOTAL_CARS; i++)
-            PlayerPrefs.SetInt("car" + i, 1);
-
-        PlayerPrefs.Save();
-    }
-
-    // =========================
-    // BUTTON ACTIONS
-    // =========================
-
-    public void buy()
-    {
-        PlayerPrefs.SetInt("car" + presentCar.ToString(), 1);
-        IsUnlocked(presentCar);
-        UpdateButtons();
-    }
-    public void UnlockSpecialCar()
+    public void SelectCar(int index)
     {
         if (CurrencyManager.instance == null) return;
+        if (index < 0 || index >= selectButtons.Length) return;
 
-        if (!CurrencyManager.instance.SpendCurrency(SPECIAL_CAR_PRICE))
+        if (!CurrencyManager.instance.IsCharacterUnlocked(index))
+            return;
+
+        selectedCarIndex = index;
+        PlayerPrefs.SetInt("selectedCar", index);
+        PlayerPrefs.Save();
+
+        UpdateAllUI();
+    }
+
+    // =========================
+    // BUY
+    // =========================
+
+    public void BuyCar(int index)
+    {
+        Debug.Log("BuyCar clicked. Index: " + index);
+
+        if (CurrencyManager.instance == null)
         {
-            ShowNotEnoughCoinsPopup();
+            Debug.LogError("CurrencyManager NULL");
             return;
         }
 
-        PlayerPrefs.SetInt("car" + SPECIAL_CAR_INDEX, 1);
-        PlayerPrefs.Save();
+        if (index < 0 || index >= carCosts.Length)
+        {
+            Debug.LogError($"Invalid index: {index} | carCosts length: {carCosts.Length}");
+            return;
+        }
 
-        UpdateButtons();
-        StartCoroutine(ForceSelectButton());
+        int cost = carCosts[index];
+        int currentCoins = CurrencyManager.instance.GetCurrency();
+
+        Debug.Log("Cost: " + cost + " Coins: " + currentCoins);
+
+        if (currentCoins < cost)
+        {
+            Debug.Log("Not enough coins");
+            ShowNotEnoughCoins();
+            return;
+        }
+
+        Debug.Log("Unlocking car...");
+        CurrencyManager.instance.SpendCurrency(cost);
+        CurrencyManager.instance.UnlockCharacter(index);
+
+        UpdateAllUI();
     }
 
-    IEnumerator ForceSelectButton()
+
+
+    // =========================
+    // UI UPDATE
+    // =========================
+
+    void UpdateAllUI()
     {
-        yield return null;
-        if (selectButton != null && selectButton.activeInHierarchy)
+        int totalCars = Mathf.Max(buyButtons.Length, selectButtons.Length);
+
+        for (int i = 0; i < totalCars; i++)
         {
-            EventSystem.current.SetSelectedGameObject(null);
-            EventSystem.current.SetSelectedGameObject(selectButton);
+            bool unlocked = CurrencyManager.instance != null &&
+                            CurrencyManager.instance.IsCharacterUnlocked(i);
+
+            // BUY BUTTON
+            if (i < buyButtons.Length && buyButtons[i] != null)
+            {
+                buyButtons[i].gameObject.SetActive(!unlocked);
+            }
+
+            // SELECT BUTTON
+            if (i < selectButtons.Length && selectButtons[i] != null)
+            {
+                selectButtons[i].gameObject.SetActive(unlocked); // OFF if not bought
+
+                if (unlocked)
+                {
+                    Image img = selectButtons[i].GetComponent<Image>();
+                    if (img != null)
+                    {
+                        img.sprite = (i == selectedCarIndex)
+                            ? inUseSprite
+                            : selectSprite;
+                    }
+                }
+            }
         }
     }
 
-    void ShowNotEnoughCoinsPopup()
+    // =========================
+    // POPUP
+    // =========================
+
+    void ShowNotEnoughCoins()
     {
-        if (notEnoughCoinsPopup == null) return;
-
-        if (notEnoughPopupCoroutine != null)
-            StopCoroutine(notEnoughPopupCoroutine);
-
-        notEnoughPopupCoroutine = StartCoroutine(NotEnoughCoinsRoutine());
+        StopAllCoroutines();
+        StartCoroutine(NotEnoughRoutine());
     }
 
-    IEnumerator NotEnoughCoinsRoutine()
+    IEnumerator NotEnoughRoutine()
     {
+        if (notEnoughCoinsPopup == null) yield break;
+
         notEnoughCoinsPopup.SetActive(true);
-        yield return new WaitForSeconds(notEnoughPopupDuration);
+        yield return new WaitForSeconds(popupDuration);
         notEnoughCoinsPopup.SetActive(false);
-        notEnoughPopupCoroutine = null;
-    }
-
-    public void SelectCar()
-    {
-        PlayerPrefs.SetInt("selectedTruck", presentCar);
-        PlayerPrefs.Save();
-
-        carSelectionPanel.SetActive(false);
-        levelselectionPanel.SetActive(false);
-
-        bool showUnlockAll = Random.value > 0.5f;
-
-        if (showUnlockAll && unlockAllPanel != null)
-            unlockAllPanel.SetActive(true);
-        else if (unlockDummyPanel != null)
-            unlockDummyPanel.SetActive(true);
-
-        TurnOffAllCars();
-    }
-
-    // ✅ DO NOT REMOVE
-    public static void CloseUnlockPanelStatic()
-    {
-        CarControllerUI ui = FindObjectOfType<CarControllerUI>(true);
-        if (ui == null) return;
-
-        if (ui.unlockAllPanel != null)
-            ui.unlockAllPanel.SetActive(false);
-
-        if (ui.unlockDummyPanel != null)
-            ui.unlockDummyPanel.SetActive(false);
-
-        if (ui.levelselectionPanel != null)
-            ui.levelselectionPanel.SetActive(true);
-    }
-
-    public void OnClose()
-    {
-        carSelectionPanel.SetActive(false);
-        mainMenuPanel.SetActive(true);
-        levelselectionPanel.SetActive(false);
-        TurnOffAllCars();
-    }
-
-    // =========================
-    // TEMP UNLOCK
-    // =========================
-
-    public void EnableTempUnlockAllCars()
-    {
-        tempUnlockAllCars = true;
-        UpdateButtons();
-    }
-
-    public void DisableTempUnlockAllCars()
-    {
-        tempUnlockAllCars = false;
-        UpdateButtons();
     }
 }

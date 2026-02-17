@@ -10,6 +10,8 @@ TagManager:
   - Rocket
   - Speed
   - Joystick
+  - BoostCollected
+  - BoostButton
   layers:
   - Default
   - TransparentFX

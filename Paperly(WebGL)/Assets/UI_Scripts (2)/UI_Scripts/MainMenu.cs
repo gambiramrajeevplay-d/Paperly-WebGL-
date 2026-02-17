@@ -9,40 +9,33 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button startButton;
     [SerializeField] private Button storeButton;
     [SerializeField] private Button settingsButton;
-    [SerializeField] private Button moreGamesButton;
-    [SerializeField] private Button backButton;
     [SerializeField] private Button storeCloseButton;
     [SerializeField] private Button settingsCloseButton;
-    [SerializeField] private Button carSelectionClose;
-    [SerializeField] private Button unlock4CloseButton;
 
     [Header("Menus")]
     [SerializeField] private GameObject storeMenu;
     [SerializeField] private GameObject settingsMenu;
-    [SerializeField] private GameObject subscriptionPanel;
-    [SerializeField] private GameObject carSelectionMenu;
     [SerializeField] private GameObject mainMenu;
-    [SerializeField] private GameObject unlock4CarsPanel;
-    [SerializeField] private GameObject levelselectionPanel;
+    [SerializeField] private GameObject levelSelection;
+    
 
-    [Header("Currency")]
-    [SerializeField] private TextMeshProUGUI currencyText;
+    //[Header("Currency")]
+    //[SerializeField] private TextMeshProUGUI currencyText;
 
     [Header("Sound")]
     public Image sound_;
     public Sprite sound_on, sound_off;
 
-    private Animator animator;
-
     private void Awake()
     {
         Time.timeScale = 1f;
+
+        // 🔊 Sync audio state when entering main menu
+        AudioManagerPause.Initialize();
     }
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
-
         // Buttons
         startButton.onClick.AddListener(OnStartButtonPressed);
         storeButton.onClick.AddListener(OpenStoreMenu);
@@ -50,64 +43,33 @@ public class MainMenu : MonoBehaviour
 
         storeCloseButton.onClick.AddListener(OpenMainMenu);
         settingsCloseButton.onClick.AddListener(OnSettingClose);
-        carSelectionClose.onClick.AddListener(OnCarSelectionClose);
-        backButton.onClick.AddListener(OpenSubscriptionPanel);
-
-        if (unlock4CloseButton != null)
-            unlock4CloseButton.onClick.AddListener(OnUnlock4Close);
 
         UpdateCurrencyText();
+        UpdateSoundSprite(); // 🔊 sync icon on start
 
-        // 🔥 CORE ENTRY FLOW
-        HandleSubscriptionEntryFlow();
-    }
-
-    // =====================
-    // 🔑 SUBSCRIPTION ENTRY LOGIC
-    // =====================
-    void HandleSubscriptionEntryFlow()
-    {
-        DisableAllMenus();
-
-        bool comingFromGame =
-            PlayerPrefs.GetInt("ShowSubscriptionPanel", 0) == 1;
-
-        bool hasSubscription =
-            PlayerPrefs.GetInt(StringsData.hasSubscription, 0) == 1;
-
-        if (comingFromGame)
-        {
-            // Clear immediately
-            PlayerPrefs.DeleteKey("ShowSubscriptionPanel");
-            PlayerPrefs.Save();
-
-            SaveScript.cameFromGameplay = true;
-
-            if (!hasSubscription)
-            {
-                subscriptionPanel.SetActive(true);
-            }
-            else
-            {
-                carSelectionMenu.SetActive(true);
-            }
-
-            return; // ⛔ skip main menu
-        }
-
-        // 🟢 Normal fresh launch
-        SaveScript.cameFromGameplay = false;
         mainMenu.SetActive(true);
+        storeMenu.SetActive(false);
+        settingsMenu.SetActive(false);
     }
+
 
     // =====================
     // MAIN FLOW
     // =====================
     public void OnStartButtonPressed()
     {
-        SaveScript.openedGameforFirstTime = true;
-        unlock4CarsPanel.SetActive(true);
-        mainMenu.SetActive(false);
+        // Load your gameplay scene here
+         mainMenu.SetActive(false);
+         levelSelection.SetActive(true);
+    }
+    private void UpdateSoundSprite()
+    {
+        if (sound_ == null) return;
+
+        if (AudioListener.pause || AudioManagerPause.IsMuted)
+            sound_.sprite = sound_off;
+        else
+            sound_.sprite = sound_on;
     }
 
     public void OpenMainMenu()
@@ -115,7 +77,6 @@ public class MainMenu : MonoBehaviour
         mainMenu.SetActive(true);
         storeMenu.SetActive(false);
         settingsMenu.SetActive(false);
-        subscriptionPanel.SetActive(false);
     }
 
     // =====================
@@ -138,34 +99,10 @@ public class MainMenu : MonoBehaviour
         settingsMenu.SetActive(false);
         mainMenu.SetActive(true);
     }
-
-    // =====================
-    // UNLOCK PANEL
-    // =====================
-    public void OnUnlock4Close()
+    public void OnStoreClose()
     {
-        unlock4CarsPanel.SetActive(false);
-        carSelectionMenu.SetActive(true);
-    }
-
-    // =====================
-    // CAR SELECTION
-    // =====================
-    public void OnCarSelectionClose()
-    {
-        carSelectionMenu.SetActive(false);
-        mainMenu.SetActive(true);
-    }
-
-    // =====================
-    // SUBSCRIPTION
-    // =====================
-    public void OpenSubscriptionPanel()
-    {
-        subscriptionPanel.SetActive(true);
-        mainMenu.SetActive(false);
         storeMenu.SetActive(false);
-        settingsMenu.SetActive(false);
+        mainMenu.SetActive(true);
     }
 
     // =====================
@@ -173,20 +110,13 @@ public class MainMenu : MonoBehaviour
     // =====================
     public void UpdateCurrencyText()
     {
-        if (currencyText != null && CurrencyManager.instance != null)
-            currencyText.text = CurrencyManager.instance.GetCurrency().ToString();
+        //if (currencyText != null && CurrencyManager.instance != null)
+        //    currencyText.text = CurrencyManager.instance.GetCurrency().ToString();
     }
 
     // =====================
-    // EXTRA
+    // SOUND
     // =====================
-    public void MoreGames()
-    {
-        Application.OpenURL(
-            "https://www.amazon.com/Games-PlayD-Game-Studio-Private-Limited/s?rh=n%3A9209902011%2Cp_4%3APlayD+Game+Studio+Private+Limited"
-        );
-    }
-
     public void Sound_on()
     {
         if (sound_.sprite == sound_on)
@@ -199,16 +129,8 @@ public class MainMenu : MonoBehaviour
             sound_.sprite = sound_on;
             AudioListener.pause = false;
         }
-    }
 
-    void DisableAllMenus()
-    {
-        mainMenu.SetActive(false);
-        storeMenu.SetActive(false);
-        settingsMenu.SetActive(false);
-        subscriptionPanel.SetActive(false);
-        carSelectionMenu.SetActive(false);
-        unlock4CarsPanel.SetActive(false);
-        levelselectionPanel.SetActive(false);
+        AudioManagerPause.IsMuted = !AudioManagerPause.IsMuted;
+        UpdateSoundSprite();
     }
 }

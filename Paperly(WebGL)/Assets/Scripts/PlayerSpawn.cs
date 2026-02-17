@@ -11,48 +11,35 @@ public class PlayerSpawn : MonoBehaviour
     {
         if (rocketPrefabs == null || rocketPrefabs.Length == 0)
         {
-            Debug.LogError("[PlayerSpawn] No truckPrefabs assigned!");
+            Debug.LogError("[PlayerSpawn] No rocketPrefabs assigned!");
             return;
         }
 
-        int selectedrocket = 0;
+        // 🔹 Use SAME key as CarControllerUI
+        int selectedRocket = PlayerPrefs.GetInt("selectedCar", 0);
 
-        if (PlayerPrefs.HasKey("selectedrocket"))
+        if (selectedRocket < 0 || selectedRocket >= rocketPrefabs.Length)
         {
-            selectedrocket = PlayerPrefs.GetInt("selectedrocket", 0);
-        }
-        else if (PlayerPrefs.HasKey("car"))
-        {
-            selectedrocket = PlayerPrefs.GetInt("car", 0);
+            selectedRocket = 0;
         }
 
-        if (selectedrocket < 0 || selectedrocket >= rocketPrefabs.Length)
-        {
-            selectedrocket = 0;
-        }
+        GameObject rocketToSpawn = rocketPrefabs[selectedRocket];
 
-        GameObject truckToSpawn = rocketPrefabs[selectedrocket];
-        if (truckToSpawn == null)
+        if (rocketToSpawn == null)
         {
-            Debug.LogError($"[PlayerSpawn] truckPrefabs[{selectedrocket}] is NULL.");
+            Debug.LogError($"[PlayerSpawn] rocketPrefabs[{selectedRocket}] is NULL.");
             return;
         }
 
-        // 🔹 Spawn EXACTLY the same way
-        GameObject spawnedTruck =
-            Instantiate(truckToSpawn, transform.position, transform.rotation);
+        GameObject spawnedRocket =
+            Instantiate(rocketToSpawn, transform.position, transform.rotation);
 
-        // 🔹 ONLY THIS: put inside Level-1
-        GameObject level1 = GameObject.Find("Level");
-        if (level1 != null)
+        GameObject level = GameObject.Find("Level");
+        if (level != null)
         {
-            spawnedTruck.transform.SetParent(level1.transform);
-        }
-        else
-        {
-            Debug.LogError("Level-1 GameObject not found in scene!");
+            spawnedRocket.transform.SetParent(level.transform);
         }
 
-        Debug.Log($"[PlayerSpawn] Spawned truck index {selectedrocket}: {truckToSpawn.name}");
+        Debug.Log($"[PlayerSpawn] Spawned rocket index {selectedRocket}: {rocketToSpawn.name}");
     }
 }

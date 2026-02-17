@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using System;
+
 
 public class PlaneController : MonoBehaviour
 {
@@ -122,12 +125,22 @@ public class PlaneController : MonoBehaviour
 
     public GameObject boostPopup;
 
+    public event Action OnBoostFinished;
+
+    [Header("Boost Button")]
+    private Button boostButton;
+
+
     [Header("Rewind System")]
     public bool isRewinding = false;
     public float recordTime = 5f; // how many seconds to store
 
     private List<Vector3> positionHistory = new List<Vector3>();
     private List<Quaternion> rotationHistory = new List<Quaternion>();
+
+    [Header("Crash VFX")]
+    public ParticleSystem crashParticles;
+
 
     void Start()
     {
@@ -158,6 +171,19 @@ public class PlaneController : MonoBehaviour
         {
             joystick = joystickObj.GetComponent<Joystick_Mobile>();
         }
+
+        Button[] buttons = FindObjectsOfType<Button>(true); // true = include inactive
+
+        foreach (Button btn in buttons)
+        {
+            if (btn.CompareTag("BoostButton"))
+            {
+                boostButton = btn;
+                boostButton.onClick.AddListener(OnBoostButtonClicked);
+                break;
+            }
+        }
+
 
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
@@ -210,6 +236,12 @@ public class PlaneController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        // 💥 PLAY CRASH PARTICLE
+        if (crashParticles != null && !crashParticles.isPlaying)
+        {
+            crashParticles.Play();
+        }
+
         if (isCrashed) return;
 
         isCrashed = true;
@@ -343,6 +375,8 @@ public class PlaneController : MonoBehaviour
     IEnumerator BoostRoutine()
     {
         isBoosting = true;
+
+       
         hasBoost = false;
 
         float originalMaxSpeed = maxSpeed;
@@ -373,6 +407,8 @@ public class PlaneController : MonoBehaviour
 
         maxSpeed = originalMaxSpeed;
         isBoosting = false;
+
+        OnBoostFinished?.Invoke();
 
         // 🎥 Reset FOV smoothly
         if (mainCam != null)
@@ -600,6 +636,15 @@ public class PlaneController : MonoBehaviour
     }
 
 
+    void OnBoostButtonClicked()
+    {
+        if (!hasBoost || isBoosting) return;
+
+        if (boostCoroutine != null)
+            StopCoroutine(boostCoroutine);
+
+        boostCoroutine = StartCoroutine(BoostRoutine());
+    }
 
 
     // ================= BODY VISUALS =================

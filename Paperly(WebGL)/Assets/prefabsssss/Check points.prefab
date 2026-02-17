@@ -545,7 +545,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -595,7 +595,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.9999287, y: -0, z: -0, w: 0.01194355}
   m_LocalPosition: {x: -0.0006888887, y: -0.009100068, z: -0.00039998474}
-  m_LocalScale: {x: 0.013464176, y: 0.0019556668, z: 0.0019556668}
+  m_LocalScale: {x: 0.030962218, y: 0.0019556668, z: 0.0045928834}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4283355931615152326}

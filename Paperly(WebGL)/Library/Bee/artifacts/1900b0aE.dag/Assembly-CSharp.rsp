@@ -422,10 +422,8 @@
 "Assets/UI_Scripts (2)/UI_Scripts/MainMenu.cs"
 "Assets/UI_Scripts (2)/UI_Scripts/Pauser.cs"
 "Assets/UI_Scripts (2)/UI_Scripts/SaveScript.cs"
-"Assets/UI_Scripts (2)/UI_Scripts/SceneLoader.cs"
 "Assets/UI_Scripts (2)/UI_Scripts/StoreMenu_UI.cs"
 "Assets/UI_Scripts (2)/UI_Scripts/StringsData.cs"
-"Assets/UI_Scripts (2)/UI_Scripts/SubscriptionPanel_UI.cs"
 -langversion:9.0
 /deterministic
 /optimize+

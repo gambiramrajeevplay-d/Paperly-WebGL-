@@ -1,0 +1,1245 @@
+Using pre-set license
+Built from '2022.3/respin/2022.3.62f2-4af31df585-v2' branch; Version is '2022.3.62f2 (7670c08855a9) revision 7762112'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'en' Physical Memory: 15530 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity_Editors\2022.3.62f2\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Paperly-WebGL-/Paperly(WebGL)
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54174
+Successfully changed project path to: D:/Paperly-WebGL-/Paperly(WebGL)
+D:/Paperly-WebGL-/Paperly(WebGL)
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8672]  Target information:
+
+Player connection [8672]  * "[IP] 192.168.0.3 [Port] 0 [Flags] 2 [Guid] 809051090 [EditorId] 809051090 [Version] 1048832 [Id] WindowsEditor(7,Bharath) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [8672] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8672] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Refreshing native plugins compatible for Editor in 5.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f2 (7670c08855a9)
+[Subsystems] Discovering subsystems at path D:/Unity_Editors/2022.3.62f2/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Paperly-WebGL-/Paperly(WebGL)/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon 740M Graphics (ID=0x15c8)
+    Vendor:   ATI
+    VRAM:     7765 MB
+    Driver:   32.0.13036.4
+Initialize mono
+Mono path[0] = 'D:/Unity_Editors/2022.3.62f2/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity_Editors/2022.3.62f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity_Editors/2022.3.62f2/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56760
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity_Editors/2022.3.62f2/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity_Editors/2022.3.62f2/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity_Editors/2022.3.62f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005393 seconds.
+- Loaded All Assemblies, in  0.355 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 284 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.532 seconds
+Domain Reload Profiling: 888ms
+	BeginReloadAssembly (107ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (148ms)
+		LoadAssemblies (107ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (145ms)
+			TypeCache.Refresh (143ms)
+				TypeCache.ScanAssembly (126ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (533ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (485ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (354ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (93ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.417 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.372 seconds
+Domain Reload Profiling: 789ms
+	BeginReloadAssembly (97ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (266ms)
+		LoadAssemblies (207ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (116ms)
+			TypeCache.Refresh (100ms)
+				TypeCache.ScanAssembly (89ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (373ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (261ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (198ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Mobile Specular Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Mobile Specular Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Mobile OutlineBlending' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Mobile OutlineBlending' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Mobile Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Mobile Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Standard PBS Outline (Specular)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Standard PBS Outline (Specular)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Standard PBS Outline Blended (Specular)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Standard PBS Outline Blended (Specular)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Desktop OutlineBlending' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Desktop OutlineBlending' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Standard PBS Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Standard PBS Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Standard PBS Outline Blended' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Standard PBS Outline Blended' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Desktop Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Desktop Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Desktop Specular Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Desktop Specular Outline' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Mobile Specular OutlineBlending' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Mobile Specular OutlineBlending' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Desktop Specular OutlineBlending' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Toony Colors Pro 2/Variants/Desktop Specular OutlineBlending' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3624 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (6.5 MB). Loaded Objects now: 4075.
+Memory consumption went from 190.7 MB to 184.2 MB.
+Total: 4.198700 ms (FindLiveObjects: 0.345300 ms CreateObjectMapping: 0.073500 ms MarkObjects: 2.108400 ms  DeleteObjects: 1.670600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 789.290665 seconds.
+  path: Assets/Scenes/Level_2.unity
+  artifactKey: Guid(f48a599135300ea429127c78b57cd724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_2.unity using Guid(f48a599135300ea429127c78b57cd724) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3493cd1d8bbf076b294b07ed3369aee7') in 0.002959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 54.629599 seconds.
+  path: Assets/Scenes/Level_3.unity
+  artifactKey: Guid(821be3851e072fc43ae5870c1f9c9827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_3.unity using Guid(821be3851e072fc43ae5870c1f9c9827) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c6951ef282588b7dcf1833336a1380c8') in 0.000619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.685876 seconds.
+  path: Assets/Scenes/Level_3.unity
+  artifactKey: Guid(821be3851e072fc43ae5870c1f9c9827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_3.unity using Guid(821be3851e072fc43ae5870c1f9c9827) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1adc1a7d2ff524653ad25793591f24f7') in 0.000528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1739.887687 seconds.
+  path: Assets/Scenes/Level_3.unity
+  artifactKey: Guid(821be3851e072fc43ae5870c1f9c9827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_3.unity using Guid(821be3851e072fc43ae5870c1f9c9827) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '31410a65f9c17e51337f89fcb84b6d3b') in 0.000733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.343003 seconds.
+  path: Assets/Scenes/Level_4.unity
+  artifactKey: Guid(ce279ea6f0c7b3249b459758e84f4a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_4.unity using Guid(ce279ea6f0c7b3249b459758e84f4a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3e0d3cadf06328e1608324eec0a66dd3') in 0.000430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 204.213025 seconds.
+  path: Assets/Scenes/Level_4.unity
+  artifactKey: Guid(ce279ea6f0c7b3249b459758e84f4a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_4.unity using Guid(ce279ea6f0c7b3249b459758e84f4a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'add81384e594d57cbb9aaee377e10e56') in 0.000830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.791519 seconds.
+  path: Assets/Scenes/Level_5.unity
+  artifactKey: Guid(c7461264bb279c147bb403c093cf1814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_5.unity using Guid(c7461264bb279c147bb403c093cf1814) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5b28289585945a35233a29ddee486e73') in 0.000558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 286.964213 seconds.
+  path: Assets/Scenes/Level_5.unity
+  artifactKey: Guid(c7461264bb279c147bb403c093cf1814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_5.unity using Guid(c7461264bb279c147bb403c093cf1814) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3ba3575d323225efda815d174491e38f') in 0.000861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 59.756966 seconds.
+  path: Assets/Scenes/Level_4.unity
+  artifactKey: Guid(ce279ea6f0c7b3249b459758e84f4a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_4.unity using Guid(ce279ea6f0c7b3249b459758e84f4a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ed39a2d338f44e0a95c4cbded5edb0a4') in 0.000830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.559401 seconds.
+  path: Assets/Scenes/Level_6.unity
+  artifactKey: Guid(c30a3bc31295b6146b3aed254124fdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_6.unity using Guid(c30a3bc31295b6146b3aed254124fdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8d230278e0e436d8c5dbd32865cff24a') in 0.000578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 745.209173 seconds.
+  path: Assets/Scenes/Level_6.unity
+  artifactKey: Guid(c30a3bc31295b6146b3aed254124fdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_6.unity using Guid(c30a3bc31295b6146b3aed254124fdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0e79d49900cb2f6ea23fbfedc6a6ebeb') in 0.000865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.021704 seconds.
+  path: Assets/Scenes/Level_7.unity
+  artifactKey: Guid(befa4c8c987d10d4d802e8a17cd66136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_7.unity using Guid(befa4c8c987d10d4d802e8a17cd66136) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '563aee971dd52dbf1c9bc1b2a7228069') in 0.000787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 234.399483 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_Cat style2.mat
+  artifactKey: Guid(d7ada63ca13f72749a46cd7c17b7355a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_Cat style2.mat using Guid(d7ada63ca13f72749a46cd7c17b7355a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '19bb45759fa43732cf3a252038b61dea') in 0.509240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG2 Demo Assets/Default/TCP2_Demo_SG2 Hologram Robot.mat
+  artifactKey: Guid(10ebbbce55b7dab44b51fd05b20b6c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG2 Demo Assets/Default/TCP2_Demo_SG2 Hologram Robot.mat using Guid(10ebbbce55b7dab44b51fd05b20b6c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '026958b26dabd1221351033620d0dbc4') in 0.121726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_Cat style6 hat.mat
+  artifactKey: Guid(e8f221911b27d8e46bf7ea09b295d671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_Cat style6 hat.mat using Guid(e8f221911b27d8e46bf7ea09b295d671) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8afd2628ddb93d99e53f746058991a05') in 0.207959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style2 body.mat
+  artifactKey: Guid(dcd5ae17c9e835649aebf91a9a5d9d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style2 body.mat using Guid(dcd5ae17c9e835649aebf91a9a5d9d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3f8e6b775fb8ef1817427f78070f9e14') in 0.116586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style4 skin.mat
+  artifactKey: Guid(ef05e57b127ed9445b4e75c269228037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style4 skin.mat using Guid(ef05e57b127ed9445b4e75c269228037) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '55d3629483ff20752d2ee8ccac9738a9') in 0.109152 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style2 skin.mat
+  artifactKey: Guid(a4f8bb9f618d7474184e8087bc2c7faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style2 skin.mat using Guid(a4f8bb9f618d7474184e8087bc2c7faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '51a4a62d50e61d8cbe410c6610eae611') in 0.123985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style2.mat
+  artifactKey: Guid(ee72c3b09636e0346a7909b0614ab334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style2.mat using Guid(ee72c3b09636e0346a7909b0614ab334) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a7729a2087b5107b74468cc70df01469') in 0.022176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style5.mat
+  artifactKey: Guid(04bf96ebc893e07458950319069ad094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style5.mat using Guid(04bf96ebc893e07458950319069ad094) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9032d6aee14f4ceafdde8583bcdb9d4c') in 0.218577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/PBS/TCP2_Demo_Robot_OutlineBehind.mat
+  artifactKey: Guid(97aa59554bf2d684d908a7ca26adbc2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/PBS/TCP2_Demo_Robot_OutlineBehind.mat using Guid(97aa59554bf2d684d908a7ca26adbc2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '680a318af85e0299999e5fb2c51e0d36') in 0.208788 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG2 Demo Assets/Default/TCP2_Demo_SG2 Detail Mask Simple.mat
+  artifactKey: Guid(ab96598f86905c64598123d0045b716c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG2 Demo Assets/Default/TCP2_Demo_SG2 Detail Mask Simple.mat using Guid(ab96598f86905c64598123d0045b716c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2c78415b050928c8e7fa740a2398497c') in 0.149530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style6.mat
+  artifactKey: Guid(2c8a59b3f26df7c49932a4aef9706cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style6.mat using Guid(2c8a59b3f26df7c49932a4aef9706cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c33bbdf13d5fb4b426947b61d1565ff0') in 0.028602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/TCP2 Demo Assets/Cubemaps/TCP2_Demo_Sky_Yokohama.mat
+  artifactKey: Guid(85b297024495e4645803112b8f339791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/TCP2 Demo Assets/Cubemaps/TCP2_Demo_Sky_Yokohama.mat using Guid(85b297024495e4645803112b8f339791) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7fed945ab98a775fd08bf2d5151ddda1') in 0.106218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style1.mat
+  artifactKey: Guid(f5de3765c494bdf4baa27b1a6645a2a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style1.mat using Guid(f5de3765c494bdf4baa27b1a6645a2a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f8b921078b393b36a196d2c3ef1a1bbe') in 0.145789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style1 body.mat
+  artifactKey: Guid(a97a2a1639d9ff341858f6d51e44ad7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style1 body.mat using Guid(a97a2a1639d9ff341858f6d51e44ad7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '07b6702c35a578115973d7d5fb04e12a') in 0.022007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style3 hat.mat
+  artifactKey: Guid(18b22bf4b2c8454488d7bbda8c5affdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style3 hat.mat using Guid(18b22bf4b2c8454488d7bbda8c5affdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '66d97221e7bb3ae8626b575d28a272e7') in 0.126134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style2 hat.mat
+  artifactKey: Guid(3f8d52d32a02e5c4cae37934e124f4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style2 hat.mat using Guid(3f8d52d32a02e5c4cae37934e124f4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd1cd4ab140123beffad97af10716e754') in 0.022101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/Default/TCP2_Demo_Robot_ComicBook.mat
+  artifactKey: Guid(914187be8c4146647856ca06c845038e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/Default/TCP2_Demo_Robot_ComicBook.mat using Guid(914187be8c4146647856ca06c845038e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '115fc0e96f4af24ceb1617788a9d1943') in 0.178957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style1 flat.mat
+  artifactKey: Guid(095d600332d3bfb49a4a577478a2c244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style1 flat.mat using Guid(095d600332d3bfb49a4a577478a2c244) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'aa13c5fe49f1adac1062f751cde5a059') in 0.025695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style2 flat body.mat
+  artifactKey: Guid(0c66e67fa5905ec4c8682b9bc9be0422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style2 flat body.mat using Guid(0c66e67fa5905ec4c8682b9bc9be0422) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c86671588621abfeb65d886ba439ded6') in 0.035431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/Water/TCP2_Demo_WaterWW2.mat
+  artifactKey: Guid(47596a96e0566484a9e16897e5b3a6c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/Water/TCP2_Demo_WaterWW2.mat using Guid(47596a96e0566484a9e16897e5b3a6c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ef7b8edaa3b3b1ff1f2f00bc41c9af28') in 0.181073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_Graffiti2.mat
+  artifactKey: Guid(77a784bbe1cc7e74c967711359ac7bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_Graffiti2.mat using Guid(77a784bbe1cc7e74c967711359ac7bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '798c67aaa75376bed8a6092085734daa') in 0.122712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style6 hat.mat
+  artifactKey: Guid(c876363f7aa22f64398688fc6ba99369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style6 hat.mat using Guid(c876363f7aa22f64398688fc6ba99369) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cc3debc0e5da008ad3f8d708b4281c39') in 0.018932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_Graffiti1.mat
+  artifactKey: Guid(04472787f80092f4b85f74bd4bd4f19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_Graffiti1.mat using Guid(04472787f80092f4b85f74bd4bd4f19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c26c98aa18d6def6937cf1d93d395c48') in 0.027433 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/PBS/TCP2_Demo_Robot_PBS.mat
+  artifactKey: Guid(f0cebd6b7384ac9438f97ad650051a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/PBS/TCP2_Demo_Robot_PBS.mat using Guid(f0cebd6b7384ac9438f97ad650051a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '96e2d517a182bbc6981c5f776097da95') in 0.337586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style5 skin.mat
+  artifactKey: Guid(f9e600ffe4ad8754294ce986e552ade7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style5 skin.mat using Guid(f9e600ffe4ad8754294ce986e552ade7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f1a96f68c006484aa39bafe2affdf4ce') in 0.176383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style6 flat skin.mat
+  artifactKey: Guid(49c063dd7d0726d489ae9a42bc06e44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style6 flat skin.mat using Guid(49c063dd7d0726d489ae9a42bc06e44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '88884d5ccffd4fb8f69ab04d59529c03') in 0.143185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/TCP2 Demo Assets/Cubemaps/TCP2_Demo_Sky_GoldenGate.mat
+  artifactKey: Guid(b42018a928539584d9e2ea47d50f7e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/TCP2 Demo Assets/Cubemaps/TCP2_Demo_Sky_GoldenGate.mat using Guid(b42018a928539584d9e2ea47d50f7e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bee06cdcf01c48bc237ce61b42ba35c9') in 0.092973 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style6 flat body.mat
+  artifactKey: Guid(fd93840df0e02fe4cb42b7e617234f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style6 flat body.mat using Guid(fd93840df0e02fe4cb42b7e617234f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6c63b38d2267da5004ace61434fb4200') in 0.127809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style3 flat.mat
+  artifactKey: Guid(8f94a9d80ef0e014b9c0282eed5685ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style3 flat.mat using Guid(8f94a9d80ef0e014b9c0282eed5685ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '21798fef1821e56522382ee46c06d0d8') in 0.146289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style5 body.mat
+  artifactKey: Guid(23f84aaf22aeadc468f591df4275e601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style5 body.mat using Guid(23f84aaf22aeadc468f591df4275e601) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '69d6412d87b7efe127d7959410fedb13') in 0.147218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/TCP2 Demo Assets/Robot Kyle/Materials/TCP2_Demo Robot.mat
+  artifactKey: Guid(0aa851515cd3747d6b3b3e461199a2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/TCP2 Demo Assets/Robot Kyle/Materials/TCP2_Demo Robot.mat using Guid(0aa851515cd3747d6b3b3e461199a2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3570bd28ae65f9ac4c496b704cd6ea78') in 0.176989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Enviorments/Mat/Material.001.mat
+  artifactKey: Guid(f28c954bb9adec34fb08fe83d7bbfe41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviorments/Mat/Material.001.mat using Guid(f28c954bb9adec34fb08fe83d7bbfe41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd43bf57cef9209a900c2a3a59ea92204') in 0.028418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Enviorments/Theme_4/desert theme .fbx
+  artifactKey: Guid(2a2736aad52bf6d46a33766c3a1decc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviorments/Theme_4/desert theme .fbx using Guid(2a2736aad52bf6d46a33766c3a1decc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1675fd636f6ec4e4e37fe1d2d6a2ba21') in 0.201349 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 87
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Enviorments/Theme_1/New Material.mat
+  artifactKey: Guid(d7aa83d180b2830478d2e850ff359ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviorments/Theme_1/New Material.mat using Guid(d7aa83d180b2830478d2e850ff359ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9472ae6c995480884d4c6426c6579ef3') in 0.027267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid MatCap.mat
+  artifactKey: Guid(3a38e4ad40800e94a8346ca005b9e060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid MatCap.mat using Guid(3a38e4ad40800e94a8346ca005b9e060) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cf2a40c52cb8ae05369310a0384c4944') in 0.222500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
+  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f346e5eacb53e70f9e5cdc991c82cd31') in 0.042805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/Roboto-Regular.ttf
+  artifactKey: Guid(6ed7389dc6cc157418355b24d4ed743d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/Roboto-Regular.ttf using Guid(6ed7389dc6cc157418355b24d4ed743d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a11d8bfd9b2e090b42a859e865418179') in 0.020075 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Editor/Fonts/sen/sen-bold.otf
+  artifactKey: Guid(21b3731dcedecc546bf47de8757b4e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Editor/Fonts/sen/sen-bold.otf using Guid(21b3731dcedecc546bf47de8757b4e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4c3b67edc164dbb573620d80946f3b4a') in 0.010779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/paperly ui/ui/Ebrima Font/Ebrima Font/ebrima.ttf
+  artifactKey: Guid(723dff8ae2fab6a428397e9d5233bd60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/paperly ui/ui/Ebrima Font/Ebrima Font/ebrima.ttf using Guid(723dff8ae2fab6a428397e9d5233bd60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '303935153cab8cb7d4b9a0757377b6a3') in 0.017442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat
+  artifactKey: Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat using Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '23ff20607bc3dbea77c482e814a004c6') in 0.057985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_Car_Flat.mat
+  artifactKey: Guid(a2584f72a2d294c489d4869a70d183e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_Car_Flat.mat using Guid(a2584f72a2d294c489d4869a70d183e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9cc7b0a5a8d3c48bf11b616f6db96217') in 0.127783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF
+  artifactKey: Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF using Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd44c984a9c3170216602ea05fa94f1b5') in 0.009050 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3404108df30f19c197f52cc93d334aea') in 0.010275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Outline Lit.mat
+  artifactKey: Guid(c29db9de06851b14a986acf12b247cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Outline Lit.mat using Guid(c29db9de06851b14a986acf12b247cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e0e47f33b995f3072732aa2cfafc4f80') in 0.191296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Ground Hybrid.mat
+  artifactKey: Guid(a3577d799040991478f3c045c0ac12bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Ground Hybrid.mat using Guid(a3577d799040991478f3c045c0ac12bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f6d848d7a08988b0f8d8e040ade6378e') in 0.130460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Metal.mat
+  artifactKey: Guid(52c54a9182faa9f4ab82242d24e0caf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Metal.mat using Guid(52c54a9182faa9f4ab82242d24e0caf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'eb6ab14f18e4fe3bd75dfe76092a1cb1') in 0.160493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Common Demo Assets/Graphics/TCP2_Demo_SkyboxDusk.mat
+  artifactKey: Guid(5390ccc6cbba36142a51bb2d8a8b582d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Common Demo Assets/Graphics/TCP2_Demo_SkyboxDusk.mat using Guid(5390ccc6cbba36142a51bb2d8a8b582d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f1e6dd2db6c0233ac96f3bccf420dc02') in 0.036396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style6.mat
+  artifactKey: Guid(9028259dff5570e4982ff329d257cfc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style6.mat using Guid(9028259dff5570e4982ff329d257cfc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c96a62c3436d56f2783b0433d5eb9530') in 0.021270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_Ground.mat
+  artifactKey: Guid(2b1fcf2ce086dab43a6c3d55565c7ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_Ground.mat using Guid(2b1fcf2ce086dab43a6c3d55565c7ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '699059f245e8f7a8a032877c7df2f464') in 0.217428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Regular.ttf
+  artifactKey: Guid(8a406076b7de34849be1f35585875a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Regular.ttf using Guid(8a406076b7de34849be1f35585875a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '57ce264455cce35ca1849adbbce1f1e3') in 0.027374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style4 body.mat
+  artifactKey: Guid(60675712091797d498fdafd5ae704697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style4 body.mat using Guid(60675712091797d498fdafd5ae704697) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '59e0b4b3c7a320cff982f2875968f4f2') in 0.112843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_StreetLightNight.mat
+  artifactKey: Guid(16c2cb4597c17284c9fe6ad19d99623d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_StreetLightNight.mat using Guid(16c2cb4597c17284c9fe6ad19d99623d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ce3699570852a96af5c15d4c9b929cf0') in 0.017376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Enviorments/Theme_5/rocks.fbx
+  artifactKey: Guid(09d9aee522006aa42b4374f949caae74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviorments/Theme_5/rocks.fbx using Guid(09d9aee522006aa42b4374f949caae74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b93aeffa7a423c0997c70db0653f06ae') in 0.111880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 51
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/TCP2 Demo Assets/Cubemaps/TCP2_Demo_Sky_NissiBeach.mat
+  artifactKey: Guid(fb95f05b10db1474ab6b72e4916bdfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/TCP2 Demo Assets/Cubemaps/TCP2_Demo_Sky_NissiBeach.mat using Guid(fb95f05b10db1474ab6b72e4916bdfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f55c50e866ec7d2804578371f5eba77f') in 0.081076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/Water/TCP2_Demo_Lava Cartoon.mat
+  artifactKey: Guid(4fd5bc199de790948b2ca08687c92062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/Water/TCP2_Demo_Lava Cartoon.mat using Guid(4fd5bc199de790948b2ca08687c92062) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c9fe68ab45aad716cb9711185e71ea7b') in 0.193613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat
+  artifactKey: Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat using Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '297fc060d38964c0667bfcf076b9438d') in 0.101176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Basic.mat
+  artifactKey: Guid(24e86e1b648e9e04aa533d9600efa53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Basic.mat using Guid(24e86e1b648e9e04aa533d9600efa53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '97f344cfe041779bc875419e19086bc6') in 0.064054 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
+  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e410e6690b7559aee5a019600376cef1') in 0.023893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Bold.ttf
+  artifactKey: Guid(26a32e627fb084948ad18b8af0f356b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Bold.ttf using Guid(26a32e627fb084948ad18b8af0f356b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8102b4a84e4f5edaa32b1643c5cb8e76') in 0.009810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Outline.mat
+  artifactKey: Guid(8a8857e285677f740aca9c1b88d890e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Outline.mat using Guid(8a8857e285677f740aca9c1b88d890e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0fc59cc116f0b8db8f71f782c662be84') in 0.169170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style4 flat skin.mat
+  artifactKey: Guid(adc3b9b3e51e784428ed5e0305644362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style4 flat skin.mat using Guid(adc3b9b3e51e784428ed5e0305644362) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7143489a6cf64a3ed8707e15bf93eb52') in 0.033389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Enviorments/Theme_6/Material.mat
+  artifactKey: Guid(dc8fcdf9fc13af8439dbf342c51a5656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviorments/Theme_6/Material.mat using Guid(dc8fcdf9fc13af8439dbf342c51a5656) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6c0b90119785764c6313c21c389541d1') in 0.019233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG2 Demo Assets/Default/TCP2_Demo_SG2 Wind Animation Grass.mat
+  artifactKey: Guid(fba57fad68104ca4f8c504e1fb6b4ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG2 Demo Assets/Default/TCP2_Demo_SG2 Wind Animation Grass.mat using Guid(fba57fad68104ca4f8c504e1fb6b4ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'fb167cbb412a2a197ccf7748c5d3a800') in 0.140225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style4 flat.mat
+  artifactKey: Guid(1b73c23d58a8ac94aa102e783cefcba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style4 flat.mat using Guid(1b73c23d58a8ac94aa102e783cefcba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b254a72040077fdb9de06c3b469fa2bc') in 0.025820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style4 flat body.mat
+  artifactKey: Guid(b3f15240ab3a6ef479dfe0146e2abd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style4 flat body.mat using Guid(b3f15240ab3a6ef479dfe0146e2abd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '07c53f6aad117a2fc7264cdaab6654ef') in 0.022021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_BrickWall_Flat.mat
+  artifactKey: Guid(2af672e9f6aba774db7c2ee1e800a98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_BrickWall_Flat.mat using Guid(2af672e9f6aba774db7c2ee1e800a98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a7ac22ad743c8af3e94891ed69d9fdaf') in 0.029062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/PBS/TCP2_Demo_Robot_SketchPBS.mat
+  artifactKey: Guid(587dbc9bf44c86444b11e63d142e1514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/PBS/TCP2_Demo_Robot_SketchPBS.mat using Guid(587dbc9bf44c86444b11e63d142e1514) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0f0611d9f343c6f52dd4fb8194903e9d') in 0.236499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style2 flat skin.mat
+  artifactKey: Guid(2deaa891e08049740b53bd21cc2142c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style2 flat skin.mat using Guid(2deaa891e08049740b53bd21cc2142c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '54359522139811a8f958e6339cc30f71') in 0.022353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style1 hat.mat
+  artifactKey: Guid(eb1f3b7918cf06b49a6be8e82ec2ec63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style1 hat.mat using Guid(eb1f3b7918cf06b49a6be8e82ec2ec63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '46f233fb2c1dc1ecfa980f0954839496') in 0.017023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style3.mat
+  artifactKey: Guid(9b95aa8fa0938194bb5009a0a726935a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style3.mat using Guid(9b95aa8fa0938194bb5009a0a726935a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c426ff5798c2caf22320daca65088d92') in 0.020015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/TCP2_Demo_Yellow.mat
+  artifactKey: Guid(abab7a08f0dcd464786a47d16b63a2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/TCP2_Demo_Yellow.mat using Guid(abab7a08f0dcd464786a47d16b63a2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b7eb66420f483f3f7a6c478ecc9ae9f2') in 0.144502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_VertexColors_Specular.mat
+  artifactKey: Guid(82dc33c8438e53f4b91d63117d998d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_VertexColors_Specular.mat using Guid(82dc33c8438e53f4b91d63117d998d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '639371c6ff5e6a3cafbc20e324f02e95') in 0.018737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style1 flat body.mat
+  artifactKey: Guid(98ce2be4b908d3442ac465424eb688d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/UnityChan/TCP2_Demo_UnityChan style1 flat body.mat using Guid(98ce2be4b908d3442ac465424eb688d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '190b343bfb0f47b84d06297e75e75b43') in 0.022142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Medium.ttf
+  artifactKey: Guid(fbfe696d18b99b946afae6126b37c025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Medium.ttf using Guid(fbfe696d18b99b946afae6126b37c025) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cd16dad042c9a57fb8daa1954ba84011') in 0.011766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Enviorments/Theme_5/Material.001.mat
+  artifactKey: Guid(bdf9d31c77503d64e91037fbcf222fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviorments/Theme_5/Material.001.mat using Guid(bdf9d31c77503d64e91037fbcf222fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '22d5f3ec8f86494a9370ceffab619490') in 0.020787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_Car.mat
+  artifactKey: Guid(78609749a6ce9b64589ac35efe11cffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_Car.mat using Guid(78609749a6ce9b64589ac35efe11cffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '82a3aa5aa7395254274bc62976b4c527') in 0.026991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/Default/TCP2_Demo_Robot_Subsurface.mat
+  artifactKey: Guid(3961287fbdab115498a998e04d35f45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/Default/TCP2_Demo_Robot_Subsurface.mat using Guid(3961287fbdab115498a998e04d35f45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1e580fb6fde93f54289857696c808d7e') in 0.115060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/TCP2_Demo_Brown.mat
+  artifactKey: Guid(b25054cb53f0901408babe5b2f89f654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/TCP2_Demo_Brown.mat using Guid(b25054cb53f0901408babe5b2f89f654) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2ddebb9f73e731a70c146c80e06d331d') in 0.017555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style4.mat
+  artifactKey: Guid(5f57daf66e29c524ea0ccce8927c37eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/Cat/TCP2_Demo_CatFlat style4.mat using Guid(5f57daf66e29c524ea0ccce8927c37eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'dbb3f1e82a1b081d7353ec88278f0553') in 0.021153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/Default/TCP2_Demo_Robot_OldSchool.mat
+  artifactKey: Guid(138235297c1018a40b1f40b5cbd792d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toony Colors Pro/Toony Colors Pro/Demo TCP2/SG Demo Assets/Default/TCP2_Demo_Robot_OldSchool.mat using Guid(138235297c1018a40b1f40b5cbd792d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd7422d6f64cfe2ff637a32aa450855ff') in 0.104946 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat
+  artifactKey: Guid(42df1c7856584b6b8db9a509b6b10074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat using Guid(42df1c7856584b6b8db9a509b6b10074) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4cd7df76bcc175850036bdd03309479c') in 0.029074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

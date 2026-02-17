@@ -25,19 +25,9 @@ public class InstructionsUI : MonoBehaviour
     private IEnumerator LoadLevelWithDelay()
     {
 
-        //if (AndroidTV.IsAndroidOrFireTv())
-        //{
-        //    // Show TV loading panel
-        //   loadingScreen.SetActive(true);
-        //}
-        //else
-        //{
-        //    // Show tablet loading panel
-        //     tabLoadingScreen.SetActive(true);
-           
-        //}
+        loadingScreen.SetActive(true);
       
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
         SceneManager.LoadScene(1);
     }
 }

@@ -1,7 +1,4 @@
-﻿
-using System.Collections;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
@@ -10,17 +7,13 @@ public class Level_Button : MonoBehaviour
     [Header("Level Details")]
     [SerializeField] private string sceneNameToLoad = "MainGame";
     [SerializeField] private int levelToLoad = 1; // 1-based
-    [SerializeField] private bool isPaidLevel = false;
 
     [Header("Visuals")]
-    public GameObject lockImage;
+    [SerializeField] private GameObject lockImage;
 
-    [Header("Menus")]
-    [SerializeField] private LevelSelectionUI levelSelectionUI;
-
-    [Header("Loading Screen")]
+    [Header("UI")]
     [SerializeField] private GameObject loadingScreen;
-    [SerializeField] private GameObject loadingScreentab;
+    [SerializeField] private GameObject levelSelectionPanel;
 
     private Button levelButton;
 
@@ -33,9 +26,7 @@ public class Level_Button : MonoBehaviour
     private void Start()
     {
         EnsureInitialized();
-
         levelButton.onClick.RemoveAllListeners();
-       
         levelButton.onClick.AddListener(LoadLevel);
     }
 
@@ -49,13 +40,9 @@ public class Level_Button : MonoBehaviour
     public void SetUnlocked(bool unlocked)
     {
         EnsureInitialized();
-
-        int playerLevel = PlayerPrefs.GetInt(StringsData.playerLevel, 1); // ✅ FIX
-        int unlockedAll = PlayerPrefs.GetInt(StringsData.unlockedAllLevels, 0);
-
         levelButton.onClick.RemoveAllListeners();
 
-        // 🚨 LEVEL 1 ALWAYS FREE
+        // LEVEL 1 → ALWAYS UNLOCKED
         if (levelToLoad == 1)
         {
             levelButton.interactable = true;
@@ -64,54 +51,15 @@ public class Level_Button : MonoBehaviour
             return;
         }
 
-        // ⭐ SPECIAL CASE: LEVEL 5 AFTER LEVEL 4 WIN
-        if (isPaidLevel && levelToLoad == 5)
-        {
-            if (playerLevel >= 5)
-            {
-                levelButton.interactable = true;
-                if (lockImage) lockImage.SetActive(false);
-
-                levelButton.onClick.AddListener(() =>
-                {
-                    if (unlockedAll == 1)
-                    {
-                        LoadLevel(); // Purchased
-                    }
-                    else
-                    {
-                        levelSelectionUI.ShowUnlockAllPanel(); // Not purchased
-                    }
-                });
-
-                return;
-            }
-        }
-
-        // 🔒 PAID LEVEL (NOT PURCHASED)
-        if (isPaidLevel && unlockedAll == 0)
-        {
-            levelButton.interactable = true;
-            if (lockImage) lockImage.SetActive(true);
-
-            levelButton.onClick.AddListener(() =>
-            {
-                levelSelectionUI.ShowUnlockAllPanel();
-            });
-
-            return;
-        }
-
-        // 🔓 NORMAL LEVEL
         levelButton.interactable = unlocked;
-        if (lockImage) lockImage.SetActive(!unlocked);
+
+        if (lockImage)
+            lockImage.SetActive(!unlocked);
 
         if (unlocked)
             levelButton.onClick.AddListener(LoadLevel);
     }
 
-
-    // ⚠️ COMPATIBILITY METHOD
     public void UnLockLevel()
     {
         int playerLevel = PlayerPrefs.GetInt(StringsData.playerLevel, 1);
@@ -121,35 +69,35 @@ public class Level_Button : MonoBehaviour
 
     private void LoadLevel()
     {
-        int unlockedAll = PlayerPrefs.GetInt(StringsData.unlockedAllLevels, 0);
+        // Save selected level
+        PlayerPrefs.SetInt(StringsData.levelToLoad, levelToLoad);
+        PlayerPrefs.Save();
 
-        if (isPaidLevel && unlockedAll == 0)
+        // Disable button to prevent double click
+        levelButton.interactable = false;
+
+        // Hide level selection
+        if (levelSelectionPanel != null)
+            levelSelectionPanel.SetActive(false);
+
+        // Show loading screen
+        if (loadingScreen != null)
+            loadingScreen.SetActive(true);
+        else
         {
-            if (levelSelectionUI != null)
-                levelSelectionUI.ShowUnlockAllPanel();
+            Debug.LogError("LoadingScreen is NOT assigned!");
             return;
         }
 
-        PlayerPrefs.SetInt(StringsData.levelToLoad, levelToLoad);
-
-        //if (AndroidTV.IsAndroidOrFireTv())
-        //{
-        //    if (loadingScreen) loadingScreen.SetActive(true);
-        //    if (loadingScreentab) loadingScreentab.SetActive(false);
-        //}
-        //else
-        //{
-        //    if (loadingScreen) loadingScreen.SetActive(false);
-        //    if (loadingScreentab) loadingScreentab.SetActive(true);
-        //}
-
-        StartCoroutine(LoadLevelWithDelay());
-    }
-
-    private IEnumerator LoadLevelWithDelay()
-    {
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(sceneNameToLoad);
+        // ✅ Delegate scene loading to LoadingManager
+        if (LoadingManager.Instance != null)
+        {
+            LoadingManager.Instance.LoadSceneWithDelay(sceneNameToLoad, 5f);
+        }
+        else
+        {
+            Debug.LogError("LoadingManager instance NOT found!");
+        }
     }
 
     public int GetLevelNumberSafe()
