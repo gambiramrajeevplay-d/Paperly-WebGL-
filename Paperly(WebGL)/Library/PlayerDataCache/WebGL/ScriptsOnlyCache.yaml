@@ -309,9 +309,6 @@ ScriptsOnlyBuild:
     methodName: Home
   - assembly: Assembly-CSharp
     fullTypeName: Pauser
-    methodName: Pause
-  - assembly: Assembly-CSharp
-    fullTypeName: Pauser
     methodName: OpenSettings
   - assembly: Assembly-CSharp
     fullTypeName: GameManager
@@ -4312,4 +4309,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level_18.unity
   - Assets/Scenes/Level_19.unity
   - Assets/Scenes/Level_20.unity
-  playerPath: C:/Users/MOKSHA GAMES AND PVT/Desktop/Paperly_New BUILD
+  playerPath: C:/Users/MOKSHA GAMES AND PVT/Desktop/test
